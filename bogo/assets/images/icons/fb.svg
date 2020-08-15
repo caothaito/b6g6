@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="36" viewBox="0 0 35 36">
+    <defs>
+        <ellipse id="prefix__a" cx="17.5" cy="18" rx="17.5" ry="18"/>
+        <path id="prefix__b" d="M5.499 16V8.702h2.496l.375-2.845H5.499V4.041c0-.823.232-1.384 1.437-1.384l1.535-.001V.111C8.205.078 7.294 0 6.234 0c-2.214 0-3.73 1.326-3.73 3.76v2.097H0v2.845h2.504V16h2.995z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".8">
+        <use fill="#F5F6FA" fill-opacity="0" xlink:href="#prefix__a"/>
+        <g transform="translate(13.5 10)">
+            <mask id="prefix__c" fill="#fff">
+                <use xlink:href="#prefix__b"/>
+            </mask>
+            <use fill="#010002" fill-rule="nonzero" xlink:href="#prefix__b"/>
+            <g fill="#1C1C1C" mask="url(#prefix__c)">
+                <path d="M0 0H22V22H0z" transform="translate(-7 -3)"/>
+            </g>
+        </g>
+    </g>
+</svg>

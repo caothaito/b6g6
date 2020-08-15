@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="58" viewBox="0 0 180 58">
+    <defs>
+        <path id="prefix__a" d="M150.448 0c16.017 0 29 12.984 29 29s-12.983 29-29 29H29C12.984 58 0 45.016 0 29S12.984 0 29 0h121.448zm0 1H29C13.536 1 1 13.536 1 29s12.536 28 28 28h121.448c15.464 0 28-12.536 28-28s-12.536-28-28-28z"/>
+        <path id="prefix__b" d="M13.601 13.019L1.291 25.996c-.359-.237-.663-.752-.666-1.418-.006-1.275.007-21.513 0-23.032C.622.818.876.373 1.232.154l12.37 12.865zM2.64.172C2.48.08 2.296.025 2.114 0l11.999 12.48 3.567-3.76L2.64.171zm11.99 12.843l3.716-3.918 5.119 2.909c1.26.716.616 1.612 0 1.963l-5.115 2.916-3.72-3.87zM2.638 25.842l15.044-8.577-3.566-3.71L2.31 26c.105-.041.215-.093.328-.158z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#495680" xlink:href="#prefix__a"/>
+        <text fill="#FFF" font-family="Poppins-Medium, Poppins" font-size="14" font-weight="400" opacity=".8">
+            <tspan x="71" y="42">Google Play</tspan>
+        </text>
+        <text fill="#FFF" font-family="Poppins-Medium, Poppins" font-size="10" font-weight="400" opacity=".8">
+            <tspan x="71" y="26">Get it on</tspan>
+        </text>
+        <g opacity=".8" transform="translate(36 16)">
+            <use fill="#FFF" fill-rule="nonzero" xlink:href="#prefix__b"/>
+        </g>
+    </g>
+</svg>

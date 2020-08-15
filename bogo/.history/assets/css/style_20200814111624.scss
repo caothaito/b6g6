@@ -1,0 +1,319 @@
+.plant-trees-main {
+  .plant-trees-home {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    // position: absolute;
+    padding: 20px 20px 0;
+
+    .plant-trees-home-searchTop {
+      .plant-trees-topLogo {
+        img {
+          max-width: 181px;
+        }
+      }
+    }
+
+    .plant-trees-searchRight {
+      // position: absolute;
+      .plant-trees-account {
+        margin-right: 80px;
+        width: 38px;
+        height: 38px;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/icons/account.svg);
+
+        .plant-trees-account-info {
+          right: 0;
+          width: 100%;
+          margin-top: 50px;
+          min-width: 445px;
+          position: absolute;
+          border: 1px solid #e4e5e9;
+          background-color: #fff;
+          border-radius: 6px;
+          -ms-border-radius: 6px;
+          -moz-border-radius: 6px;
+          -webkit-border-radius: 6px;
+          -o-border-radius: 6px;
+          padding: 35px 20px 30px;
+          -webkit-transition: top 0.5s ease-in-out;
+          -ms-transition: top 0.5s ease-in-out;
+          -moz-transition: top 0.5s ease-in-out;
+          -o-transition: top 0.5s ease-in-out;
+          transition: top 0.5s ease-in-out;
+          -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          -ms-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          -o-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          -moz-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+
+          .item {
+            width: 100%;
+            margin-bottom: 40px;
+
+            .content {
+              margin-top: -5px;
+              width: calc(100% - 62px);
+
+              .title {
+                color: #333;
+                font-weight: 600;
+                font-size: 17px;
+                font-size: 1.0625rem;
+              }
+
+              .desc {
+                color: #6f6f6f;
+                font-weight: 400;
+                font-size: 13px;
+                font-size: 0.8125rem;
+              }
+            }
+          }
+        }
+      }
+
+      .plant-trees-menu-mobile {
+        .nav {
+          -webkit-transition: left 0.5s ease;
+          -moz-transition: left 0.5s ease;
+          -ms-transition: left 0.5s ease;
+          -o-transition: left 0.5s ease;
+          transition: left 0.5s ease;
+          background: #f8f9fa;
+          color: white;
+          cursor: pointer;
+          right: -20rem;
+          padding: 6rem 2rem 2rem 2rem;
+          position: fixed;
+          top: 0;
+          width: 14rem;
+          z-index: 1;
+          // text-align: center;
+
+          ul {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .nav.expanded {
+          right: 0;
+        }
+
+        .nav-toggle {
+          border: 1px solid #dfe1e5;
+          border-radius: 50%;
+          // display: inline-block;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          cursor: pointer;
+          height: 37px;
+          width: 37px;
+          right: 2rem;
+          position: fixed;
+          top: 21px;
+          text-align: center;
+          z-index: 2;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          .nav-toggle-bar {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            background: #999;
+            content: '';
+            height: 2px;
+            width: 15px;
+            margin-top: 0;
+
+            &::after {
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -ms-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+              background: #999;
+              content: '';
+              height: 2px;
+              width: 15px;
+              margin-top: 5px;
+            }
+
+            &::before {
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -ms-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+              background: #999;
+              content: '';
+              height: 2px;
+              width: 15px;
+              margin-top: -5px;
+            }
+          }
+        }
+
+        .nav-toggle.expanded {
+          .nav-toggle-bar {
+            background: transparent;
+
+            &::after {
+              background: #999;
+              margin-top: 0;
+              -ms-transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            &::before {
+              background: #999;
+              margin-top: 0;
+              -ms-transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// blogTop
+
+.plant-trees-blogTop {
+  margin-bottom: 65px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url(../images/blog/blog-top.png);
+
+  .plant-trees-flex {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    .plant-blogTop-left {
+      // float: right;
+      max-width: 480px;
+      padding: 170px 0 225px;
+
+      .plant-blogTop-title {
+        color: #31343a;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 40px;
+        font-size: 2.5rem;
+      }
+
+      .plant-blogTop-desc {
+        color: #444;
+        line-height: 2;
+        max-width: 480px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        font-size: 1rem;
+      }
+
+      .plant-blogTop-add {
+        color: #fff;
+        padding: 10px;
+        max-width: 298px;
+        text-align: center;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        -ms-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -o-border-radius: 3px;
+        background-color: #6fae2e;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        div:first-child {
+          font-weight: 700;
+          font-size: 16px;
+          font-size: 1rem;
+        }
+
+        div {
+          font-weight: 300;
+          font-size: 13px;
+          font-size: 0.8125rem;
+        }
+      }
+
+      .plant-trees-rate {
+        .plant-trees-star-title {
+          color: #333;
+          padding: 5px 0 0 7px;
+          font-weight: 400;
+          font-size: 13px;
+          font-size: 0.8125rem;
+        }
+      }
+    }
+  }
+}
+
+.plant-easyPeasy {
+  .plant-trees-title {
+    color: #31343a;
+    margin-bottom: 55px;
+    font-weight: 700;
+    font-size: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .plant-easyPeasy-item{
+    margin-bottom: 80px;
+    display: flex;
+    .plant-easyPeasy-content{
+        max-width: 400px;
+        .number{
+            margin-top: 10px;
+            
+        }
+    }
+  }
+}
