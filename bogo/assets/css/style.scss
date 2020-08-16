@@ -1,3 +1,9 @@
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
 img {
   max-width: 100%;
 }
@@ -19,6 +25,7 @@ img {
     }
 
     .plant-trees-searchRight {
+
       // position: absolute;
       .plant-trees-account {
         margin-right: 80px;
@@ -363,16 +370,12 @@ img {
   -webkit-border-radius: 9px;
   -o-border-radius: 9px;
   padding: 32px 26px 30px 53px;
-  background-image: -webkit-linear-gradient(
-    112deg,
-    #ececf0 5%,
-    #ededf0 77%
-  ) !important;
-  background-image: -o-linear-gradient(
-    112deg,
-    #ececf0 5%,
-    #ededf0 77%
-  ) !important;
+  background-image: -webkit-linear-gradient(112deg,
+      #ececf0 5%,
+      #ededf0 77%) !important;
+  background-image: -o-linear-gradient(112deg,
+      #ececf0 5%,
+      #ededf0 77%) !important;
   background-image: linear-gradient(112deg, #ececf0 5%, #ededf0 77%) !important;
 
   .title {
@@ -485,16 +488,19 @@ img {
   }
 
   .plant-trees-lastsNews-slider {
-      margin-top: 65px;
+    margin-top: 65px;
+
     .item {
       padding: 0 12px;
-      a{
-          color: #333;
-          text-decoration: none;
-          &:hover{
-            outline: 0;
-            color: #6fae2e;
-          }
+
+      a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          outline: 0;
+          color: #6fae2e;
+        }
       }
     }
 
@@ -512,6 +518,7 @@ img {
           -webkit-transform 30s cubic-bezier(0.19, 1, 0.22, 1);
       }
     }
+
     .title {
       margin: 20px 0 10px;
       font-weight: 600;
@@ -519,49 +526,206 @@ img {
       font-size: 0.9375rem;
       text-transform: capitalize;
     }
-    .date{
-        padding-left: 10px;
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    font-size: .875rem;
-    &::before{
+
+    .date {
+      padding-left: 10px;
+      position: relative;
+      font-weight: 400;
+      font-size: 14px;
+      font-size: .875rem;
+
+      &::before {
         left: 0;
-    top: 2px;
-    width: 3px;
-    content: '';
-    height: 16px;
-    position: absolute;
-    background-color: #6fae2e;
+        top: 2px;
+        width: 3px;
+        content: '';
+        height: 16px;
+        position: absolute;
+        background-color: #6fae2e;
+      }
     }
-    }
-    .owl-theme{
-        .owl-nav{
-            bottom: 103%;
-            right: 0;
-            position: absolute;
-            .owl-prev{
-                span{
-                    padding: 6px 20px 11px 17px;
-                    &:focus{
-                        outline: none;
-                    }
-                }
+
+    .owl-theme {
+      .owl-nav {
+        bottom: 103%;
+        right: 0;
+        position: absolute;
+
+        .owl-prev {
+          span {
+            padding: 6px 20px 11px 17px;
+
+            &:focus {
+              outline: none;
             }
-            .owl-next{
-                span{
-             
-                    padding: 6px 20px 11px 17px;
-                    /* border-radius: 50%; */
-                   
-                    z-index: 3;
-                }
-            }
+          }
         }
-        .owl-dots{
-            display: none;
+
+        .owl-next {
+          span {
+
+            padding: 6px 20px 11px 17px;
+            /* border-radius: 50%; */
+
+            z-index: 3;
+          }
         }
+      }
+
+      .owl-dots {
+        display: none;
+      }
     }
   }
 
+}
+
+// FAQs
+
+
+.plant-trees-faq {
+  margin-top: 80px;
+  padding: 35px 0 50px;
+  background-color: #fbfbfb;
+
+  .plant-trees-faq-text {
+    color: #31343a;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .plant-trees-faq-desc {
+    color: #888;
+    line-height: 1.65;
+    font-weight: 400;
+    font-size: 17px;
+    font-size: 1.0625rem;
+    text-align: center;
+  }
+
+  .accordion {
+    margin-top:0px;
+    .accordion-item {
+      border-bottom: 1px solid $lightgray;
+
+      button[aria-expanded='true'] {
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: $text;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        color: $blue;
+
+        &::after {
+          cursor: pointer;
+          color: $blue;
+          border: 1px solid $blue;
+        }
+      }
+
+      .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+
+    button[aria-expanded='true'] {
+      color: $blue;
+
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+
+      +.accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+    }
+  }
+}
+
+
+// footer
+
+footer {
+  margin-top:50px;
+  .footer-top{
+    padding: 15px 0 5px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    .footer-top-left{
+      
+      ul{
+        list-style: none;
+      }
+    }
+  }
 }
