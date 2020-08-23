@@ -1,0 +1,51 @@
+.plant-trees-main{
+    .plant-trees-home-search{
+        top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    padding: 20px 20px 0;
+    .plant-trees-home-searchTop{
+        color: #222;
+        cursor: pointer;
+        position: relative;
+        font-weight: 600;
+        font-size: 15px;
+        font-size: .9375rem;
+        border: 1px solid #d6d8dc;
+        padding: 8px 13px 6px 35px;
+        border-radius: 19px;
+        background-repeat: no-repeat;
+        background-position: 14px center;
+        transition: all .3s ease-in-out;
+        background-image: url(../images/icons/tree.svg);
+        .num-of-search{
+            left: 0;
+    // top: -999px;
+    width: 100%;
+    z-index: 99;
+    min-width: 325px;
+    position: absolute;
+    border: 1px solid #e4e5e9;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: top .5s ease-in-out;
+    box-shadow: 0 6px 15px 0 rgba(0,0,0,.08);
+    .content{
+        color: #333;
+        float: left;
+        width: 100%;
+        line-height: 1.54;
+        padding: 20px 20px 15px;
+        font-weight: 400;
+        font-size: 13px;
+        font-size: .8125rem;
+    }
+    .share{
+        float: left;
+        width: 100%;
+    }
+        }
+    }
+    }
+}

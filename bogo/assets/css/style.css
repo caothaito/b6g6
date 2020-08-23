@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
 img {
   max-width: 100%;
 }
@@ -6,6 +11,7 @@ img {
   top: 0;
   left: 0;
   z-index: 2;
+  position: absolute;
   padding: 20px 20px 0;
 }
 
@@ -14,11 +20,11 @@ img {
 }
 
 .plant-trees-main .plant-trees-home .plant-trees-searchRight .plant-trees-account {
-  margin-right: 80px;
+  right: 0;
+  margin-right: 54px;
   width: 38px;
   height: 38px;
   cursor: pointer;
-  position: relative;
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,17 +40,11 @@ img {
   border: 1px solid #e4e5e9;
   background-color: #fff;
   border-radius: 6px;
-  -ms-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
   padding: 35px 20px 30px;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
   -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
-  -ms-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
-  -o-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
 .plant-trees-main .plant-trees-home .plant-trees-searchRight .plant-trees-account .plant-trees-account-info .item {
@@ -110,7 +110,7 @@ img {
   height: 37px;
   width: 37px;
   right: 2rem;
-  position: fixed;
+  position: absolute;
   top: 21px;
   text-align: center;
   z-index: 2;
@@ -282,7 +282,6 @@ img {
 }
 
 .plant-easyPeasy .plant-easyPeasy-wrap .plant-esayPeasy-item .plant-easyPeasy-content .number {
-  margin-top: 10px;
   display: inline;
 }
 
@@ -315,10 +314,6 @@ img {
 
 .plant-transparency {
   border-radius: 9px;
-  -ms-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px;
-  -o-border-radius: 9px;
   padding: 32px 26px 30px 53px;
   background-image: linear-gradient(112deg, #ececf0 5%, #ededf0 77%) !important;
 }
@@ -348,10 +343,6 @@ img {
   font-size: 16px;
   font-size: 1rem;
   border-radius: 3px;
-  -ms-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
   background-color: #6fae2e;
   text-decoration: none;
 }
@@ -470,7 +461,7 @@ img {
   position: relative;
   font-weight: 400;
   font-size: 14px;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .plant-trees-latesNews .plant-trees-lastsNews-slider .date::before {
@@ -532,7 +523,7 @@ img {
 }
 
 .plant-trees-faq .accordion {
-  margin-top: 0px;
+  margin-top: 50px;
 }
 
 .plant-trees-faq .accordion .accordion-item {
@@ -636,17 +627,41 @@ img {
   margin: 2em 0;
 }
 
-footer {
+.footer-home {
+  float: left;
+  width: 100%;
   margin-top: 50px;
 }
 
-footer .footer-top {
-  padding: 15px 0 5px;
+.footer-home .footer-top {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-footer .footer-top .footer-top-left ul {
+.footer-home .footer-top .footer-top-left ul li {
   list-style: none;
+  float: left;
+  padding-right: 50px;
+}
+
+.footer-home .footer-top .footer-top-left ul li a {
+  color: #333;
+  line-height: 1.92;
+  letter-spacing: 1.2px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.footer-home .footer-top .footer-top-right {
+  float: right;
+  text-align: end;
+}
+
+.footer-home .footer-top .footer-top-right a {
+  margin-left: 15px;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */

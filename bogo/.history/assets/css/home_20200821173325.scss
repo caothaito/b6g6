@@ -1,0 +1,594 @@
+$green: #54842a;
+$greenIn: #6fae2e;
+// phone (maxwidth - 600px)
+// tab-land (600px – 900 px)
+// tab-port (900px – 1200px)
+// big-desktop (minwidth 1800 px)
+
+@mixin  respond($breakpoint) {
+    @if $breakpoint == phone{
+        @media (max-width: 600px){@content}; //600px
+    }
+    @if $breakpoint == tab-port{
+        @media (max-width: 900px){@content};  //900px
+    }
+    @if $breakpoint == tab-land{
+        @media (max-width: 1200px){@content}; //1200px
+    }
+    @if $breakpoint == big-desktop{
+        @media (min-width: 1800px){@content}; //1800px
+    }
+}
+
+
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'InterUI';
+    src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: "Semibold ";
+    src: url('../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+
+
+.plant-trees-main {
+    .plant-trees-home-search {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        position: absolute;
+        padding: 20px 20px 0;
+
+        .plant-trees-home-searchTop {
+            .plant-trees-home-searchLeft {
+                color: #222;
+                cursor: pointer;
+                position: relative;
+                font-weight: 600;
+                font-size: 15px;
+                font-size: 0.9375rem;
+                border: 1px solid #d6d8dc;
+                padding: 8px 13px 6px 35px;
+                border-radius: 19px;
+                background-repeat: no-repeat;
+                background-position: 14px center;
+                transition: all 0.3s ease-in-out;
+
+                background-image: url(../images/icons/tree.svg);
+
+                .num-of-search {
+                    left: 0;
+                    top: -999px;
+                    width: 100%;
+                    z-index: 99;
+                    min-width: 325px;
+                    position: absolute;
+                    border: 1px solid #e4e5e9;
+                    background-color: #fff;
+                    border-radius: 6px;
+                    transition: top 0.5s ease-in-out;
+                    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+                    margin-top: 18px;
+
+                    .content {
+                        color: #333;
+                        float: left;
+                        width: 100%;
+                        line-height: 1.54;
+                        padding: 20px 20px 15px;
+                        font-weight: 400;
+                        font-size: 13px;
+                        font-size: 0.8125rem;
+
+                        a {
+                            float: left;
+                            color: #7c7c7c;
+                            width: 100%;
+                        }
+                    }
+
+                    .share {
+                        float: left;
+                        width: 100%;
+                        position: relative;
+                        padding: 15px 20px 20px;
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            height: 1px;
+                            content: '';
+                            position: absolute;
+                            width: calc(100% - 25px);
+                            background-color: #e8e9ee;
+                        }
+
+                        .text {
+                            color: $green;
+                            font-weight: 400;
+                            font-size: 13px;
+                        }
+
+                        .share-social {
+                            float: right;
+
+                            a {
+                                color: #333;
+                                padding-right: 8px;
+
+                                &:hover {
+                                    color: $greenIn;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .plant-trees-home-searchRight {
+                float: right;
+
+                .plant-trees-home-account {
+                    width: 38px;
+                    height: 38px;
+                    cursor: pointer;
+                    position: relative;
+                    display: inline-block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url(../images/icons/account.svg);
+
+                    .plant-trees-home__info {
+                        margin-top: 50px;
+                        right: 0;
+                        width: 100%;
+                        top: -999px;
+                        min-width: 445px;
+                        position: absolute;
+                        border: 1px solid #e4e5e9;
+                        background-color: #fff;
+                        border-radius: 6px;
+                        padding: 35px 20px 40px 30px;
+                        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+
+                        .item {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 40px;
+                        }
+
+                        .content {
+                            float: right;
+                            margin-top: -5px;
+                            width: calc(100% - 62px);
+
+                            .title {
+                                color: #333;
+                                font-weight: 600;
+                                font-size: 17px;
+                                font-size: 1.0625rem;
+                            }
+
+                            .desc {
+                                color: #6f6f6f;
+                                font-weight: 400;
+                                font-size: 13px;
+                                font-size: 0.8125rem;
+                            }
+                        }
+                    }
+                }
+
+                .plant-trees-menu {
+                    .m-trigger {
+                        .hambuger {
+                            padding: 15px 15px;
+                            display: inline-block;
+                            cursor: pointer;
+                            font: inherit;
+                            color: inherit;
+                            text-transform: none;
+                            background-color: transparent;
+                            border: 0;
+                            margin: 0;
+                            overflow: visible;
+                            padding: 0;
+                            font-weight: 500;
+                            opacity: 1;
+
+                            .hambuger-box {
+                                top: 0;
+                                width: 37px;
+                                height: 37px;
+                                margin-left: 10px;
+                                line-height: 37px;
+                                text-align: center;
+                                position: relative;
+                                border: 1px solid #dfe1e5;
+                                border-radius: 50%;
+
+                                .hambuger-inner {
+                                    top: 12px;
+                                    right: 10px;
+                                    height: 2px;
+                                    width: 15px;
+                                    margin-top: 0;
+                                    background-color: #999;
+                                    position: absolute;
+                                    display: block;
+
+                                    &:before {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 5px;
+                                        width: 15px;
+                                        height: 2px;
+                                        background-color: #999;
+                                        transition-duration: 0.2s;
+                                    }
+
+                                    &:after {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        top: 10px;
+                                        height: 2px;
+                                        width: 15px;
+                                        background-color: #999;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.plant-trees-searchBox {
+    margin-top: 200px;
+    text-align: center;
+
+    .plant-trees-logo {
+        margin-bottom: 25px;
+    }
+
+    .plant-trees-search {
+        form {
+            margin: 0 auto;
+            max-width: 585px;
+            position: relative;
+
+            input {
+                padding: 10px 45px 10px 20px;
+                border: 1px solid #dfe1e5;
+                border-radius: 23px;
+                background: #fff;
+                color: #132833;
+                font-family: inherit;
+                font-size: inherit;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                top: 15px;
+                padding: 0;
+                right: 15px;
+                color: #000;
+                width: 16px;
+                height: 16px;
+                font-size: 0;
+                border: none;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-image: url(../images/icons/research.svg);
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+    }
+
+    .plant-trees-count {
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+
+        .countup {
+            display: flex;
+
+            .number {
+                display: flex;
+
+                .numberBox {
+                    height: 18px;
+                    border-radius: 4px;
+                    background-color: #e0e2e3;
+                    font-size: 50px;
+                    font-family: Inter;
+                    font-size: 34px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    min-width: 32px;
+                    max-height: 36px;
+                    line-height: 36px;
+                    color: #6fae2e;
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 700;
+                    font-size: 34px;
+                    font-size: 2.125rem;
+                    text-align: center;
+                }
+            }
+
+            span {
+                mix-blend-mode: multiply;
+                font-family: InterUI;
+                font-size: 36px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #7cb356;
+            }
+        }
+
+        .million-100 {
+            margin-top: 12px;
+
+            p {
+                font-family: InterUI;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #444444;
+            }
+        }
+    }
+
+    .plant-trees-why-should {
+        margin-top: 50px;
+
+        .text {
+            font-family: Semibold;
+        }
+    }
+
+}
+
+
+.plant-trees-slider {
+
+    .laputa {
+        .in-the-sky {
+            display: flex;
+            height: auto;
+            width: 100%;
+            justify-content: space-between;
+            position: relative;
+
+            .laputa-left {
+                margin-top: auto;
+                width: 50%;
+
+            }
+
+            .laputa-right {
+                width: 50%;
+            }
+
+            .cuold {
+                position: absolute;
+                max-width: 100%;
+            }
+
+            .million-1 {
+                top: 26%;
+                left: 14%;
+            }
+
+            .million-2 {
+                bottom: 8%;
+                left: 5%;
+            }
+
+            .million-3 {
+                right: 4%;
+
+            }
+
+            .million-4 {
+
+                right: 25%;
+
+            }
+
+            .million-5 {
+                bottom: 41%;
+                right: 33%;
+            }
+        }
+    }
+
+
+}
+
+.plant-trees-global {
+    .plant-trees-global-title {
+        margin-bottom: 80px;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #31343a;
+    }
+
+    .plant-trees-global-content {
+        .plant-tree-flex {
+            float: left;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .plant-trees-global-item {
+                height: 100%;
+                padding: 25px 30px 30px;
+                border-radius: 7px;
+                border: 1px solid rgba(0, 0, 0, .18);
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    border: 1px solid #e57515;
+                    transition: all .3s ease-in-out;
+                }
+
+                .plant-trees-global-icon {
+                    text-align: right;
+                    margin-bottom: 10px;
+
+                }
+
+                .plant-trees-number {
+                    color: #e57515;
+                    font-weight: 700;
+                    font-size: 44px;
+                    font-size: 2.75rem;
+                }
+
+                .plant-trees-global-text {
+                    color: #373737;
+                    font-weight: 600;
+                    font-size: 17px;
+                    font-size: 1.0625rem;
+                }
+            }
+        }
+    }
+}
+
+.plant-trees-future {
+    margin-top: 60px;
+    position: relative;
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/home/act-the@2x.jpg);
+
+    .plant-trees-future-title {
+        right: 0;
+        width: 100%;
+        content: '';
+        position: absolute;
+        top: calc(220px);
+        @include res
+        .plant-trees-future-left {
+            width: 53%;
+            float: left;
+
+            .plant-trees-future-left-inner {
+                float: right;
+                max-width: 545px;
+
+                .plant-trees-future-text {
+                   margin-top: 40px;
+                    a {
+                        font-family: InterUI;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: #6fae2e;
+                    }
+
+                    span {
+                        opacity: 0.9;
+                        font-family: InterUI;
+                        font-size: 31px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.36;
+                        letter-spacing: normal;
+                        color: #ffffff;
+                    }
+                }
+
+                .plant-trees-add {
+                    margin-top: 170px;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 10px;
+                        display: block;
+                        max-width: 298px;
+                        text-align: center;
+                        margin-bottom: 15px;
+                        border-radius: 3px;
+                        background-color: #6fae2e;
+                        div:first-child{
+                            font-weight: 700;
+                            font-size: 16px;
+                            font-size: 1rem;
+                        }
+                    }
+                    .plant-trees-rate{
+                        .plant-trees-text{
+                            color: #333!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
