@@ -21,6 +21,24 @@ $greenIn: #6fae2e;
 }
 
 
+html{
+    @include respond(phone){
+        font-size: 50%  ; //1rem =9px
+    }
+
+    @include respond(tab-land){
+        font-size: 80%  ; //1rem =9px
+    }
+
+    @include respond(tab-port){
+        font-size: 90%; //1 rem = 8px
+    }
+
+    @include respond(big-desktop){
+        font-size: 90%; //1rem = 12px
+    }
+}
+
 img{
     max-width: 100%;
 }
@@ -476,14 +494,16 @@ img{
             display: flex;
             flex-wrap: wrap;
             overflow: hidden;
-
+          
             .plant-trees-global-item {
                 height: 100%;
                 padding: 25px 30px 30px;
                 border-radius: 7px;
                 border: 1px solid rgba(0, 0, 0, .18);
                 transition: all .3s ease-in-out;
-
+                @include respond (phone){
+                    height: 90%;
+                }
                 &:hover {
                     cursor: pointer;
                     border: 1px solid #e57515;
@@ -534,18 +554,26 @@ img{
             width: 53%;
             float: left;
             @include respond(tab-land){
-                width: 100%;
-                float: none;
+                margin-left: 20px;
             }
+            @include respond(phone){
+                width: 100%;
+                margin-left: 0;
+             } 
+
             .plant-trees-future-left-inner {
                 float: right;
                 max-width: 545px;
 
                 .plant-trees-future-text {
                    margin-top: 40px;
+                   @include respond(phone){
+                       margin-top:0;
+                   }
                     a {
                         font-family: InterUI;
                         font-size: 16px;
+                       
                         font-weight: bold;
                         font-stretch: normal;
                         font-style: normal;
@@ -555,6 +583,7 @@ img{
                     }
 
                     span {
+                        font-size: 2rem;
                         opacity: 0.9;
                         font-family: InterUI;
                         font-size: 31px;
@@ -569,6 +598,9 @@ img{
 
                 .plant-trees-add {
                     margin-top: 170px;
+                    @include respond(phone){
+                         margin-top:100px;
+                    }
                     a {
                         text-decoration: none;
                         color: #fff;
@@ -579,6 +611,10 @@ img{
                         margin-bottom: 15px;
                         border-radius: 3px;
                         background-color: #6fae2e;
+                        @include respond(phone){
+                            margin-left: auto;
+                             margin-right: auto;
+                            }
                         div:first-child{
                             font-weight: 700;
                             font-size: 16px;
@@ -586,12 +622,30 @@ img{
                         }
                     }
                     .plant-trees-rate{
+                        @include respond(phone){
+                            text-align: center;
+                        }
                         .plant-trees-text{
                             color: #333!important;
+                         
+
                         }
                     }
                 }
             }
+        }
+        .plant-trees-future-right{
+       img{
+        @include respond(phone){
+            display:none
+        }
+
+        @include respond(tab-land){
+            width: 45%;
+
+        } 
+
+       }
         }
     }
 }

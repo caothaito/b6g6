@@ -1,3 +1,27 @@
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -452,6 +476,12 @@ img {
   transition: all .3s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-global .plant-trees-global-content .plant-tree-flex .plant-trees-global-item {
+    height: 90%;
+  }
+}
+
 .plant-trees-global .plant-trees-global-content .plant-tree-flex .plant-trees-global-item:hover {
   cursor: pointer;
   border: 1px solid #e57515;
@@ -503,8 +533,14 @@ img {
 
 @media (max-width: 1200px) {
   .plant-trees-future .plant-trees-future-title .plant-trees-future-left {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left {
     width: 100%;
-    float: none;
+    margin-left: 0;
   }
 }
 
@@ -515,6 +551,12 @@ img {
 
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-future-text {
   margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-future-text {
+    margin-top: 0;
+  }
 }
 
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-future-text a {
@@ -529,6 +571,7 @@ img {
 }
 
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-future-text span {
+  font-size: 2rem;
   opacity: 0.9;
   font-family: InterUI;
   font-size: 31px;
@@ -544,6 +587,12 @@ img {
   margin-top: 170px;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add {
+    margin-top: 100px;
+  }
+}
+
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add a {
   text-decoration: none;
   color: #fff;
@@ -556,13 +605,38 @@ img {
   background-color: #6fae2e;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add a div:first-child {
   font-weight: 700;
   font-size: 16px;
   font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add .plant-trees-rate {
+    text-align: center;
+  }
+}
+
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add .plant-trees-rate .plant-trees-text {
   color: #333 !important;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-right img {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-right img {
+    width: 45%;
+  }
 }
 /*# sourceMappingURL=home.css.map */
