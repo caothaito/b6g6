@@ -1,0 +1,364 @@
+$green: #54842a;
+$greenIn: #6fae2e;
+// phone (maxwidth - 600px)
+// tab-land (600px – 900 px)
+// tab-port (900px – 1200px)
+// big-desktop (minwidth 1800 px)
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+
+
+html {
+    @include respond(phone) {
+        font-size: 50%; //1rem =9px
+    }
+
+    @include respond(tab-land) {
+        font-size: 80%; //1rem =9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 90%; //1 rem = 8px
+    }
+
+    @include respond(big-desktop) {
+        font-size: 90%; //1rem = 12px
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'InterUI';
+    src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: "Semibold ";
+    src: url('../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf');
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+
+
+.plant-trees-main {
+    .plant-trees-home-search {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        position: absolute;
+        padding: 20px 20px 0;
+
+        .plant-trees-home-searchTop {
+            .plant-trees-home-searchLeft {
+                display: flex;
+               a {
+                   img{
+                   max-width: 125px;
+               }
+        
+            }
+            .plant-trees-search {
+                max-width: 692px;
+                form {
+                    margin: 0 auto;
+                    max-width: 585px;
+                    position: relative;
+        
+                    input {
+                        padding: 10px 45px 10px 20px;
+                        border: 1px solid #dfe1e5;
+                        border-radius: 23px;
+                        background: #fff;
+                        color: #132833;
+                        font-family: inherit;
+                        font-size: inherit;
+                        width: 100%;
+        
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+        
+                    button {
+                        top: 15px;
+                        padding: 0;
+                        right: 15px;
+                        color: #000;
+                        width: 16px;
+                        height: 16px;
+                        font-size: 0;
+                        border: none;
+                        position: absolute;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        background-image: url(../images/icons/research.svg);
+        
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+        
+            }
+         }
+
+            .plant-trees-home-searchRight {
+                float: right;
+                display: inline-flex;
+                .plant-trees-number{
+                    margin-right: 12px;
+                    color: #222;
+                    cursor: pointer;
+                    position: relative;
+                    font-weight: 600;
+                    font-size: 15px;
+                    font-size: 0.9375rem;
+                    border: 1px solid #d6d8dc;
+                    padding: 8px 13px 6px 35px;
+                    border-radius: 19px;
+                    background-repeat: no-repeat;
+                    background-position: 14px center;
+                    transition: all 0.3s ease-in-out;
+    
+                    background-image: url(../images/icons/tree.svg);
+    
+                    .num-of-search {
+                        left: 0;
+                        top: -999px;
+                        width: 100%;
+                        z-index: 99;
+                        min-width: 325px;
+                        position: absolute;
+                        border: 1px solid #e4e5e9;
+                        background-color: #fff;
+                        border-radius: 6px;
+                        transition: top 0.5s ease-in-out;
+                        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+                        margin-top: 18px;
+    
+                        .content {
+                            color: #333;
+                            float: left;
+                            width: 100%;
+                            line-height: 1.54;
+                            padding: 20px 20px 15px;
+                            font-weight: 400;
+                            font-size: 13px;
+                            font-size: 0.8125rem;
+    
+                            a {
+                                float: left;
+                                color: #7c7c7c;
+                                width: 100%;
+                            }
+                        }
+    
+                        .share {
+                            float: left;
+                            width: 100%;
+                            position: relative;
+                            padding: 15px 20px 20px;
+    
+                            &:after {
+                                top: 0;
+                                left: 0;
+                                height: 1px;
+                                content: '';
+                                position: absolute;
+                                width: calc(100% - 25px);
+                                background-color: #e8e9ee;
+                            }
+    
+                            .text {
+                                color: $green;
+                                font-weight: 400;
+                                font-size: 13px;
+                            }
+    
+                            .share-social {
+                                float: right;
+    
+                                a {
+                                    color: #333;
+                                    padding-right: 8px;
+    
+                                    &:hover {
+                                        color: $greenIn;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .plant-trees-home-account {
+                    width: 38px;
+                    height: 38px;
+                    cursor: pointer;
+                    position: relative;
+                    display: inline-block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-image: url(../images/icons/account.svg);
+
+                    .plant-trees-home__info {
+                        margin-top: 50px;
+                        right: 0;
+                        width: 100%;
+                        top: -999px;
+                        min-width: 445px;
+                        position: absolute;
+                        border: 1px solid #e4e5e9;
+                        background-color: #fff;
+                        border-radius: 6px;
+                        padding: 35px 20px 40px 30px;
+                        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+
+                        .item {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 40px;
+                        }
+
+                        .content {
+                            float: right;
+                            margin-top: -5px;
+                            width: calc(100% - 62px);
+
+                            .title {
+                                color: #333;
+                                font-weight: 600;
+                                font-size: 17px;
+                                font-size: 1.0625rem;
+                            }
+
+                            .desc {
+                                color: #6f6f6f;
+                                font-weight: 400;
+                                font-size: 13px;
+                                font-size: 0.8125rem;
+                            }
+                        }
+                    }
+                }
+
+                .plant-trees-menu {
+                    .m-trigger {
+                        .hambuger {
+                            padding: 15px 15px;
+                            display: inline-block;
+                            cursor: pointer;
+                            font: inherit;
+                            color: inherit;
+                            text-transform: none;
+                            background-color: transparent;
+                            border: 0;
+                            margin: 0;
+                            overflow: visible;
+                            padding: 0;
+                            font-weight: 500;
+                            opacity: 1;
+
+                            .hambuger-box {
+                                top: 0;
+                                width: 37px;
+                                height: 37px;
+                                margin-left: 10px;
+                                line-height: 37px;
+                                text-align: center;
+                                position: relative;
+                                border: 1px solid #dfe1e5;
+                                border-radius: 50%;
+
+                                .hambuger-inner {
+                                    top: 12px;
+                                    right: 10px;
+                                    height: 2px;
+                                    width: 15px;
+                                    margin-top: 0;
+                                    background-color: #999;
+                                    position: absolute;
+                                    display: block;
+
+                                    &:before {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        right: 0;
+                                        top: 5px;
+                                        width: 15px;
+                                        height: 2px;
+                                        background-color: #999;
+                                        transition-duration: 0.2s;
+                                    }
+
+                                    &:after {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        top: 10px;
+                                        height: 2px;
+                                        width: 15px;
+                                        background-color: #999;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

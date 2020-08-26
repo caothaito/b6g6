@@ -456,6 +456,12 @@ img {
   color: #31343a;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-global .plant-trees-global-title {
+    font-size: 21px;
+  }
+}
+
 .plant-trees-global .plant-trees-global-content .plant-tree-flex {
   float: left;
   width: 100%;
@@ -583,6 +589,12 @@ img {
   color: #ffffff;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-future-text span {
+    font-size: 28px;
+  }
+}
+
 .plant-trees-future .plant-trees-future-title .plant-trees-future-left .plant-trees-future-left-inner .plant-trees-add {
   margin-top: 170px;
 }
@@ -638,5 +650,405 @@ img {
   .plant-trees-future .plant-trees-future-title .plant-trees-future-right img {
     width: 45%;
   }
+}
+
+.plant-trees-out-future {
+  margin-top: 300px;
+}
+
+.plant-trees-out-future .plant-trees-out-title {
+  text-align: center;
+  color: #31343a;
+  position: relative;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-out-future .plant-trees-out-title {
+    font-size: 21px;
+  }
+}
+
+.plant-trees-out-future .plant-trees-out-title::before {
+  height: 5px;
+  width: 55px;
+  content: '';
+  bottom: -15px;
+  position: absolute;
+  left: calc(50% - 27px);
+  background-color: #6fae2e;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner {
+  float: left;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner div:fisrt-child {
+  margin-bottom: 20px;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-left {
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-left {
+    position: absolute;
+  }
+}
+
+@media (max-width: 900px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-left {
+    display: none;
+  }
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .title {
+  color: #373b42;
+  max-width: 430px;
+  margin: -65px 0 15px 50px;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work {
+  margin-left: 50px;
+  line-height: 1.82;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 11px;
+  font-size: .6875rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work a {
+  color: #373b42;
+  position: relative;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work a {
+    margin-left: 50px;
+  }
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work a::before {
+  top: 1px;
+  width: 7px;
+  content: '';
+  height: 11px;
+  right: -23px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/arrow-right-sm.svg);
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work .how-it-work-bg {
+  margin-top: 40px;
+  position: relative;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work .how-it-work-bg .plant-trees-macbook {
+  top: 45px;
+  left: -178px;
+  position: absolute;
+  z-index: 3;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work .how-it-work-bg .plant-trees-macbook {
+    left: -95px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .how-it-work .how-it-work-bg .plant-trees-macbook {
+    left: -33px;
+  }
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .plant-trees-lifetime {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .plant-trees-lifetime .plant-trees-lifetime-content {
+  max-width: 540px;
+  padding-left: 62px;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .plant-trees-lifetime .plant-trees-lifetime-content div {
+  color: #3f434b;
+  line-height: 2.0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-family: Poppins;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-out-inner .plant-trees-out-right .plant-trees-lifetime .plant-trees-lifetime-content div :first-child span {
+  width: 28;
+  display: inline-block;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add .add-btn {
+  margin-top: 55px;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  max-width: 298px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #6fae2e;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add .add-btn :first-child {
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add .plant-trees-rate {
+  margin-top: 10px;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add .plant-trees-rate .plant-trees-star {
+  padding-left: 30px;
+}
+
+.plant-trees-out-future .plant-trees-out-content .plant-trees-add .plant-trees-rate .plant-trees-star-text {
+  color: #333;
+  padding: 5px 0 0 7px;
+  font-weight: 400;
+  font-size: 13px;
+  font-size: .8125rem;
+}
+
+.plant-trees-make {
+  width: 100%;
+  display: inline-block;
+  margin-top: 65px;
+  background-color: #212c4e;
+}
+
+.plant-trees-make .plant-trees-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left {
+  width: 59.5%;
+  float: left;
+  position: relative;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left {
+  float: right;
+  text-align: left;
+  min-width: 647px;
+  padding: 65px 0 0 12px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left {
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left {
+    min-width: 325px;
+  }
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left .text {
+  max-width: 455px;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left .text span {
+  color: #fff;
+  line-height: 1.1;
+  position: relative;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left .text span {
+    font-size: 21px;
+  }
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-trees-make-left .text .green-stick {
+  margin-top: 20px;
+  height: 5px;
+  width: 55px;
+  background-color: #6fae2e;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .desc .make-text-md {
+  color: #fff;
+  margin: 45px 0 5px;
+  line-height: 1.91;
+  font-weight: 600;
+  font-size: 23px;
+  font-size: 1.4375rem;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .desc .make-text-md strong {
+  color: #6fae2e;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .desc .make-text-sm {
+  max-width: 340px;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  color: rgba(155, 160, 177, 0.9);
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-add {
+  margin-top: 20px;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-add .btn-add {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  max-width: 298px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #6fae2e;
+  text-decoration: none;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-add .plant-rate {
+  float: right;
+  margin-top: -72px;
+  padding-right: 0;
+  max-width: 316px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-add .plant-rate {
+    float: none;
+    margin-top: 0;
+  }
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-add .plant-rate .plant--star {
+  float: left;
+  width: 100%;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-add .plant-rate .plant--star-text {
+  color: #838a9e;
+  padding-left: 0;
+}
+
+.plant-trees-make .plant-trees-flex .plant-trees--left .plant-app {
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-app {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-make .plant-trees-flex .plant-trees--left .plant-app a:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.plant-trees-make .plant-trees-flex .make-bg-bot {
+  text-align: right;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.plant-trees-make .plant-trees-make-right {
+  width: 40.5%;
+  float: right;
+  min-height: 825px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/home/make-diff.jpg);
+}
+
+.footer-home {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-home .footer-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-home .footer-top .footer-top-left ul li {
+  list-style: none;
+  float: left;
+  padding-right: 50px;
+}
+
+.footer-home .footer-top .footer-top-left ul li a {
+  color: #333;
+  line-height: 1.92;
+  letter-spacing: 1.2px;
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: .75rem;
+}
+
+.footer-home .footer-top .footer-top-right {
+  float: right;
+}
+
+.footer-home .footer-top .footer-top-right a {
+  margin-left: 15px;
+  color: #333;
 }
 /*# sourceMappingURL=home.css.map */

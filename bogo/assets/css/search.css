@@ -1,0 +1,380 @@
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'InterUI';
+  src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: "Semibold ";
+  src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+.plant-trees-main .plant-trees-home-search {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  padding: 20px 20px 0;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search {
+    display: contents;
+  }
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft {
+  max-width: 692px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-logo img {
+  max-width: 125px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft {
+    margin-top: 80px;
+    display: inline-block;
+    margin-left: 100px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search {
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search {
+    margin-top: 20px;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search form {
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search form input {
+  padding: 10px 45px 10px 20px;
+  border: 1px solid #dfe1e5;
+  border-radius: 23px;
+  background: #fff;
+  color: #132833;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search form input:focus {
+  outline: none;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search form button {
+  top: 15px;
+  padding: 0;
+  right: 15px;
+  color: #000;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  border: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(../images/icons/research.svg);
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchLeft .plant-trees-search form button:focus {
+  outline: none;
+  border: none;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight {
+  float: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight {
+    margin-top: 20px;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number {
+  margin-right: 12px;
+  color: #222;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  border: 1px solid #d6d8dc;
+  padding: 8px 13px 6px 35px;
+  border-radius: 19px;
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: url(../images/icons/tree.svg);
+}
+
+@media (max-width: 900px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number {
+    left: 12px;
+    position: absolute;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search {
+  left: 0;
+  top: -999px;
+  width: 100%;
+  z-index: 99;
+  min-width: 325px;
+  position: absolute;
+  border: 1px solid #e4e5e9;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
+  -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+  margin-top: 18px;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .content {
+  color: #333;
+  float: left;
+  width: 100%;
+  line-height: 1.54;
+  padding: 20px 20px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .content a {
+  float: left;
+  color: #7c7c7c;
+  width: 100%;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 15px 20px 20px;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share:after {
+  top: 0;
+  left: 0;
+  height: 1px;
+  content: '';
+  position: absolute;
+  width: calc(100% - 25px);
+  background-color: #e8e9ee;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share .text {
+  color: #54842a;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share .share-social {
+  float: right;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share .share-social a {
+  color: #333;
+  padding-right: 8px;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-number .num-of-search .share .share-social a:hover {
+  color: #6fae2e;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/account.svg);
+}
+
+@media (max-width: 600px) {
+  .plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account {
+    display: none;
+  }
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account .plant-trees-home__info {
+  margin-top: 50px;
+  right: 0;
+  width: 100%;
+  top: -999px;
+  min-width: 445px;
+  position: absolute;
+  border: 1px solid #e4e5e9;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 35px 20px 40px 30px;
+  -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account .plant-trees-home__info .item {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account .plant-trees-home__info .content {
+  float: right;
+  margin-top: -5px;
+  width: calc(100% - 62px);
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account .plant-trees-home__info .content .title {
+  color: #333;
+  font-weight: 600;
+  font-size: 17px;
+  font-size: 1.0625rem;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-home-account .plant-trees-home__info .content .desc {
+  color: #6f6f6f;
+  font-weight: 400;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-menu .m-trigger .hambuger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-menu .m-trigger .hambuger .hambuger-box {
+  top: 0;
+  width: 37px;
+  height: 37px;
+  margin-left: 10px;
+  line-height: 37px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #dfe1e5;
+  border-radius: 50%;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-menu .m-trigger .hambuger .hambuger-box .hambuger-inner {
+  top: 12px;
+  right: 10px;
+  height: 2px;
+  width: 15px;
+  margin-top: 0;
+  background-color: #999;
+  position: absolute;
+  display: block;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-menu .m-trigger .hambuger .hambuger-box .hambuger-inner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 15px;
+  height: 2px;
+  background-color: #999;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.plant-trees-main .plant-trees-home-search .plant-trees-home-searchTop .plant-trees-home-searchRight .plant-trees-menu .m-trigger .hambuger .hambuger-box .hambuger-inner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  height: 2px;
+  width: 15px;
+  background-color: #999;
+}
+/*# sourceMappingURL=search.css.map */
