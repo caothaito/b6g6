@@ -377,4 +377,193 @@ img {
   width: 15px;
   background-color: #999;
 }
+
+.plant-trees-searchPage .plant-trees-searchOption {
+  margin-top: 100px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-searchPage .plant-trees-searchOption {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-searchOption {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 8px 6px -6px #777;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu {
+  margin-left: -150px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  list-style-type: none;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a {
+  font-family: "Poppins";
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 1px);
+  height: 1px;
+  background: #6fae2e;
+  bottom: -6px;
+  left: 0;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+  z-index: -1;
+  -webkit-transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a:hover {
+  color: #6fae2e;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a:hover::before {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a.active {
+  color: #6fae2e;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a.active::before {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a.all {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-all.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a.all {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .images {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-img.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .images {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .news {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-new.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .news {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .video {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-video.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .video {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .maps {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-map.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .maps {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .tool {
+  padding-left: 20px;
+  background-image: url(../images/search/icon-more.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .tool {
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .settings {
+  top: 2px;
+  right: 0;
+  position: absolute;
+  padding-left: 20px;
+  background-image: url(../images/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: 0px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li .settings {
+    background-image: none;
+    padding-left: 0;
+    position: unset;
+  }
+}
 /*# sourceMappingURL=search.css.map */

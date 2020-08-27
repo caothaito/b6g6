@@ -97,104 +97,94 @@ img {
         z-index: 2;
         position: absolute;
         padding: 20px 20px 0;
-
-        @include respond (tab-port) {
+        @include respond (tab-port){
             display: contents;
         }
-
         .plant-trees-home-searchTop {
-            @include respond (tab-port) {
+            @include respond (tab-port){
                 display: flex;
             }
-
+         
             .plant-trees-home-searchLeft {
                 max-width: 692px;
                 display: flex;
-
-                .plant-trees-logo {
-                    img {
-                        max-width: 125px;
-                    }
-
-                }
-
-                @include respond (tab-port) {
-                    margin-top: 80px;
-                    display: inline-block;
-                    margin-left: 100px;
-                    text-align: center;
-                }
-
-                @include respond(phone) {
-                    margin-left: 0;
-                }
-
-                .plant-trees-search {
-                    margin-left: 20px;
-
-                    @include respond(tab-port) {
-                        margin-top: 20px;
-                    }
-
-                    form {
-                        margin: 0 auto;
-                        max-width: 100%;
-                        position: relative;
-
-                        input {
-                            padding: 10px 45px 10px 20px;
-                            border: 1px solid #dfe1e5;
-                            border-radius: 23px;
-                            background: #fff;
-                            color: #132833;
-                            font-family: inherit;
-                            font-size: inherit;
-                            width: 100%;
-
-                            &:focus {
-                                outline: none;
-                            }
-                        }
-
-                        button {
-                            top: 15px;
-                            padding: 0;
-                            right: 15px;
-                            color: #000;
-                            width: 16px;
-                            height: 16px;
-                            font-size: 0;
-                            border: none;
-                            position: absolute;
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            background-color: transparent;
-                            background-image: url(../images/icons/research.svg);
-
-                            &:focus {
-                                outline: none;
-                                border: none;
-                            }
-                        }
-                    }
-
-                }
+               .plant-trees-logo {
+                   img{
+                   max-width: 125px;
+               }
+        
             }
+            @include respond (tab-port){
+                margin-top: 80px;
+                display: inline-block;
+                margin-left: 100px;
+                text-align: center;
+            }
+            @include respond(phone){
+                margin-left: 0;
+            }
+            .plant-trees-search {
+                margin-left: 20px;
+                @include respond(tab-port){
+                    margin-top: 20px;
+                }
+                form {
+                    margin: 0 auto;
+                    max-width: 100%;
+                    position: relative;
+        
+                    input {
+                        padding: 10px 45px 10px 20px;
+                        border: 1px solid #dfe1e5;
+                        border-radius: 23px;
+                        background: #fff;
+                        color: #132833;
+                        font-family: inherit;
+                        font-size: inherit;
+                        width: 100%;
+        
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+        
+                    button {
+                        top: 15px;
+                        padding: 0;
+                        right: 15px;
+                        color: #000;
+                        width: 16px;
+                        height: 16px;
+                        font-size: 0;
+                        border: none;
+                        position: absolute;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-color: transparent;
+                        background-image: url(../images/icons/research.svg);
+        
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+        
+            }
+         }
 
             .plant-trees-home-searchRight {
                 float: right;
                 display: inline-flex;
-
-                @include respond (tab-port) {
+                @include respond (tab-port){
                     margin-top: 20px;
                 }
-
                 // @include respond (phone){
                 //     margin-top: 20px;
                 // }
-
-
-                .plant-trees-number {
+                
+             
+                .plant-trees-number{
                     margin-right: 12px;
                     color: #222;
                     cursor: pointer;
@@ -208,8 +198,8 @@ img {
                     background-position: 14px center;
                     transition: all 0.3s ease-in-out;
                     background-image: url(../images/icons/tree.svg);
-
-                    @include respond (tab-port) {
+                    
+                    @include respond (tab-port){
                         left: 12px;
                         position: absolute;
                     }
@@ -227,7 +217,7 @@ img {
                         transition: top 0.5s ease-in-out;
                         box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.08);
                         margin-top: 18px;
-
+    
                         .content {
                             color: #333;
                             float: left;
@@ -237,20 +227,20 @@ img {
                             font-weight: 400;
                             font-size: 13px;
                             font-size: 0.8125rem;
-
+    
                             a {
                                 float: left;
                                 color: #7c7c7c;
                                 width: 100%;
                             }
                         }
-
+    
                         .share {
                             float: left;
                             width: 100%;
                             position: relative;
                             padding: 15px 20px 20px;
-
+    
                             &:after {
                                 top: 0;
                                 left: 0;
@@ -260,20 +250,20 @@ img {
                                 width: calc(100% - 25px);
                                 background-color: #e8e9ee;
                             }
-
+    
                             .text {
                                 color: $green;
                                 font-weight: 400;
                                 font-size: 13px;
                             }
-
+    
                             .share-social {
                                 float: right;
-
+    
                                 a {
                                     color: #333;
                                     padding-right: 8px;
-
+    
                                     &:hover {
                                         color: $greenIn;
                                     }
@@ -292,11 +282,9 @@ img {
                     background-position: center;
                     background-repeat: no-repeat;
                     background-image: url(../images/icons/account.svg);
-
-                    @include respond(phone) {
+                    @include respond(phone){
                         display: none;
                     }
-
                     .plant-trees-home__info {
                         margin-top: 50px;
                         right: 0;
@@ -408,86 +396,49 @@ img {
 }
 
 
-.plant-trees-searchPage {
-    .plant-trees-searchOption {
+.plant-trees-searchPage{
+    .plant-trees-searchOption{
         margin-top: 100px;
         // margin-left: -69px;
         padding-bottom: 5px;
         border-bottom: 1px solid #ededed;
-        @include respond(tab-port){
-            margin-top: 25px;
-        }
-        @include respond(phone){
-            -webkit-box-shadow: 0 10px 6px -6px #777;
-            -moz-box-shadow: 0 10px 6px -6px #777;
-                 box-shadow: 0 8px 6px -6px #777;
-        }
         #mainMenu {
-            margin-left: -150px;
-
-            @include respond(tab-land) {
-                margin-left: 0;
-            }
-
-            .plant-trees-menuOption {
-                display: inline-flex;
-                display: -webkit-inline-box;
-                list-style-type: none;
-
-                li {
-
-                    >a {
-                        font-family: "Poppins";
-                        font-size: 12px;
-                        letter-spacing: 1px;
-                        color: #333;
-                        font-weight: 500;
-                        position: relative;
-                        z-index: 1;
-                        text-decoration: none;
-
+           .plant-trees-menuOption{
+               display: inline-flex;
+               display: -webkit-inline-box;
+               list-style-type: none;
+            li {
+                >a {
+                    
+                    font-family: "Poppins";
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: #333;
+                    font-weight: 500;
+                    position: relative;
+                    z-index: 1;
+                    text-decoration: none;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: calc(100% - 1px);
+                        height: 1px;
+                        background: #6fae2e;
+                        bottom: -6px;
+                        left: 0;
+                        -webkit-transform: scale(0, 1);
+                        -ms-transform: scale(0, 1);
+                        transform: scale(0, 1);
+                        -webkit-transform-origin: right center;
+                        -ms-transform-origin: right center;
+                        transform-origin: right center;
+                        z-index: -1;
+                        -webkit-transition: transform 0.5s ease;
+                        transition: transform 0.5s ease;
+                    }
+                    &:hover {
                         &::before {
-                            position: absolute;
-                            content: "";
-                            width: calc(100% - 1px);
-                            height: 1px;
-                            background: #6fae2e;
-                            bottom: -6px;
-                            left: 0;
-                            -webkit-transform: scale(0, 1);
-                            -ms-transform: scale(0, 1);
-                            transform: scale(0, 1);
-                            -webkit-transform-origin: right center;
-                            -ms-transform-origin: right center;
-                            transform-origin: right center;
-                            z-index: -1;
-                            -webkit-transition: transform 0.5s ease;
-                            transition: transform 0.5s ease;
-                        }
-
-                        &:hover {
                             color: #6fae2e;
-
-                            &::before {
-
-                                -webkit-transform: scale(1, 1);
-                                -ms-transform: scale(1, 1);
-                                transform: scale(1, 1);
-                                -webkit-transform-origin: left center;
-                                -ms-transform-origin: left center;
-                                transform-origin: left center;
-                            }
-                        }
-                    }
-
-                    &:not(:last-of-type) {
-                        margin-right: 30px;
-                    }
-
-                    >a.active {
-                        color: #6fae2e;
-
-                        &::before {
                             -webkit-transform: scale(1, 1);
                             -ms-transform: scale(1, 1);
                             transform: scale(1, 1);
@@ -496,86 +447,25 @@ img {
                             transform-origin: left center;
                         }
                     }
-
-                    >a.all {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-all.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                            background-image: none;
-                             padding-left: 0;
-                        }
+                }
+                &:not(:last-of-type) {
+                    margin-right: 30px;
+                }
+                >a.active {
+                    color: #6fae2e;
+                    &::before {
+                        -webkit-transform: scale(1, 1);
+                        -ms-transform: scale(1, 1);
+                        transform: scale(1, 1);
+                        -webkit-transform-origin: left center;
+                        -ms-transform-origin: left center;
+                        transform-origin: left center;
                     }
-
-                    .images {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-img.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
-                          }
-                    }
-
-                    .news {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-new.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
-                          }
-                    }
-
-                    .video {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-video.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
-                          }
-                    }
-
-                    .maps {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-map.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
-                          }
-                    }
-
-                    .tool {
-                        padding-left: 20px;
-                        background-image: url(../images/search/icon-more.svg);
-                        background-repeat: no-repeat;
-                        @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
-                          }
-                    }
-
-                    .settings {
-                        top: 2px;
-                        right: 0;
-                        position: absolute;
-                        padding-left: 20px;
-                        background-image: url(../images/icons/arrow-down.svg);
-                        background-repeat: no-repeat;
-                        background-position: 0px;
-                        @include respond(tab-land) {
-                            background-image: none;
-                             padding-left: 0;
-                             position: unset;
-                           }
-                    }
-
                 }
             }
-
+           } 
+    
         }
-
+        
     }
 }

@@ -418,9 +418,9 @@ img {
             margin-top: 25px;
         }
         @include respond(phone){
-            -webkit-box-shadow: 0 10px 6px -6px #777;
-            -moz-box-shadow: 0 10px 6px -6px #777;
-                 box-shadow: 0 8px 6px -6px #777;
+            -webkit-box-shadow: 0 3px 6px -6px #777;
+            -moz-box-shadow: 0 3px 6px -6px #777;
+                 box-shadow: 0 3px 6px -6px #777;
         }
         #mainMenu {
             margin-left: -150px;

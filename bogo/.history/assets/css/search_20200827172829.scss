@@ -414,14 +414,7 @@ img {
         // margin-left: -69px;
         padding-bottom: 5px;
         border-bottom: 1px solid #ededed;
-        @include respond(tab-port){
-            margin-top: 25px;
-        }
-        @include respond(phone){
-            -webkit-box-shadow: 0 10px 6px -6px #777;
-            -moz-box-shadow: 0 10px 6px -6px #777;
-                 box-shadow: 0 8px 6px -6px #777;
-        }
+
         #mainMenu {
             margin-left: -150px;
 
@@ -502,8 +495,7 @@ img {
                         background-image: url(../images/search/icon-all.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                            background-image: none;
-                             padding-left: 0;
+                          display: none;
                         }
                     }
 
@@ -512,8 +504,7 @@ img {
                         background-image: url(../images/search/icon-img.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
+                            display: none;
                           }
                     }
 
@@ -522,8 +513,7 @@ img {
                         background-image: url(../images/search/icon-new.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
+                            display: none;
                           }
                     }
 
@@ -532,8 +522,7 @@ img {
                         background-image: url(../images/search/icon-video.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
+                            display: none;
                           }
                     }
 
@@ -542,8 +531,7 @@ img {
                         background-image: url(../images/search/icon-map.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
+                            display: none;
                           }
                     }
 
@@ -552,24 +540,18 @@ img {
                         background-image: url(../images/search/icon-more.svg);
                         background-repeat: no-repeat;
                         @include respond(tab-land) {
-                           background-image: none;
-                            padding-left: 0;
+                            display: none;
                           }
                     }
 
                     .settings {
-                        top: 2px;
+                        top: 4px;
                         right: 0;
                         position: absolute;
                         padding-left: 20px;
                         background-image: url(../images/icons/arrow-down.svg);
                         background-repeat: no-repeat;
                         background-position: 0px;
-                        @include respond(tab-land) {
-                            background-image: none;
-                             padding-left: 0;
-                             position: unset;
-                           }
                     }
 
                 }

@@ -414,14 +414,7 @@ img {
         // margin-left: -69px;
         padding-bottom: 5px;
         border-bottom: 1px solid #ededed;
-        @include respond(tab-port){
-            margin-top: 25px;
-        }
-        @include respond(phone){
-            -webkit-box-shadow: 0 10px 6px -6px #777;
-            -moz-box-shadow: 0 10px 6px -6px #777;
-                 box-shadow: 0 8px 6px -6px #777;
-        }
+
         #mainMenu {
             margin-left: -150px;
 
@@ -568,7 +561,6 @@ img {
                         @include respond(tab-land) {
                             background-image: none;
                              padding-left: 0;
-                             position: unset;
                            }
                     }
 
