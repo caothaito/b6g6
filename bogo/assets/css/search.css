@@ -407,11 +407,25 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: -29px;
+  }
+}
+
 .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption {
   display: -ms-inline-flexbox;
   display: inline-flex;
   display: -webkit-inline-box;
   list-style-type: none;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption {
+    width: 300px;
+  }
 }
 
 .plant-trees-searchPage .plant-trees-searchOption #mainMenu .plant-trees-menuOption li > a {
@@ -565,5 +579,105 @@ img {
     padding-left: 0;
     position: unset;
   }
+}
+
+.plant-trees-searchPage .plant-trees-content {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-content {
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
+    border-bottom: 2px solid #ededed;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown {
+  display: -webkit-inline-box;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown {
+    margin-bottom: 3px;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
+  margin-left: -150px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
+    margin-left: 21px;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches .switch-wrap {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.38);
+  padding: 2px;
+  width: 39px;
+  height: 19px;
+  border-radius: 10px;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches .switch-wrap input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches .switch {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0fr 1fr 1fr;
+      grid-template-columns: 0fr 1fr 1fr;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches .switch::after {
+  height: 14px;
+  width: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #ccc;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches input:checked + .switch {
+  -ms-grid-columns: 1fr 1fr 0fr;
+      grid-template-columns: 1fr 1fr 0fr;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches input:checked + .switch::after {
+  background-color: #52cf71;
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-safeSearch {
+  margin-left: 60px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-safeSearch {
+    margin-left: 14px;
+  }
+}
+
+.plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-anyTime {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=search.css.map */

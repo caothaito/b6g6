@@ -435,7 +435,6 @@ img {
             @include respond(phone) {
                 overflow: auto;
                 white-space: nowrap;
-                margin-left: -29px;
             }
 
             .plant-trees-menuOption {
@@ -598,43 +597,29 @@ img {
         }
 
     }
-
-    .plant-trees-content {
+    .plant-trees-content{
         margin-top: 10px;
-
-        @include respond(phone) {
-            margin-top: 20px;
-            overflow: auto;
-            white-space: nowrap;
-            border-bottom: 2px solid #ededed;
-        }
-
-        .plant-trees-dropDown {
+                   @include respond(phone) {
+                    overflow: auto;
+                    white-space: nowrap;
+                }
+    
+        .plant-trees-dropDown{
             display: -webkit-inline-box;
-
-            @include respond(phone) {
-                margin-bottom: 3px;
-            }
-
             .plant-trees-swiches {
                 margin-left: -150px;
-
-                @include respond(tab-land) {
+                @include respond(tab-land){
                     margin-left: 50px;
                 }
-
-                @include respond(phone) {
-                    margin-left: 21px;
-                }
-
+     
                 .switch-wrap {
                     cursor: pointer;
-                    background-color: rgba(0, 0, 0, .38);
+                    background-color: rgba(0,0,0,.38);
                     padding: 2px;
                     width: 39px;
                     height: 19px;
                     border-radius: 10px;
-
+        
                     input {
                         position: absolute;
                         opacity: 0;
@@ -642,13 +627,13 @@ img {
                         height: 0;
                     }
                 }
-
+        
                 .switch {
                     height: 100%;
                     display: grid;
                     grid-template-columns: 0fr 1fr 1fr;
                     transition: .2s;
-
+        
                     //ICYMI, pseudo elements are treated as grid items
                     &::after {
                         height: 14px;
@@ -660,32 +645,26 @@ img {
                         transition: background .2s;
                     }
                 }
-
+        
                 input:checked {
                     +.switch {
                         grid-template-columns: 1fr 1fr 0fr;
-
+        
                         &::after {
                             background-color: #52cf71;
                         }
                     }
                 }
-
+    
             }
-
-            .plant-trees-safeSearch {
+            .plant-trees-safeSearch{
                 margin-left: 60px;
-
-                @include respond(phone) {
-                    margin-left: 14px;
-                }
             }
-
-            .plant-trees-anyTime {
+            .plant-trees-anyTime{
                 margin-left: 20px;
             }
         }
 
     }
-
+ 
 }

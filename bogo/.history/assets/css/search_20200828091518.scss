@@ -414,37 +414,30 @@ img {
         // margin-left: -69px;
         padding-bottom: 5px;
         border-bottom: 1px solid #ededed;
-
-        @include respond(tab-port) {
+        @include respond(tab-port){
             margin-top: 25px;
         }
-
-        @include respond(phone) {
+        @include respond(phone){
             -webkit-box-shadow: 0 10px 6px -6px #777;
             -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 8px 6px -6px #777;
+                 box-shadow: 0 8px 6px -6px #777;
         }
-
         #mainMenu {
             margin-left: -150px;
 
             @include respond(tab-land) {
                 margin-left: 0;
             }
-
-            @include respond(phone) {
+            @include respond(phone){
                 overflow: auto;
                 white-space: nowrap;
-                margin-left: -29px;
             }
-
             .plant-trees-menuOption {
                 display: inline-flex;
                 display: -webkit-inline-box;
                 list-style-type: none;
-
-                @include respond(phone) {
-                    width: 300px;
+                @include respond(phone){
+                   width: 300px;
                 }
 
                 li {
@@ -514,10 +507,9 @@ img {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-all.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
                             background-image: none;
-                            padding-left: 0;
+                             padding-left: 0;
                         }
                     }
 
@@ -525,55 +517,50 @@ img {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-img.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
-                            background-image: none;
+                           background-image: none;
                             padding-left: 0;
-                        }
+                          }
                     }
 
                     .news {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-new.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
-                            background-image: none;
+                           background-image: none;
                             padding-left: 0;
-                        }
+                          }
                     }
 
                     .video {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-video.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
-                            background-image: none;
+                           background-image: none;
                             padding-left: 0;
-                        }
+                          }
                     }
 
                     .maps {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-map.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
-                            background-image: none;
+                           background-image: none;
                             padding-left: 0;
-                        }
+                          }
                     }
 
                     .tool {
                         padding-left: 20px;
                         background-image: url(../images/search/icon-more.svg);
                         background-repeat: no-repeat;
-
                         @include respond(tab-land) {
-                            background-image: none;
+                           background-image: none;
                             padding-left: 0;
-                        }
+                          }
                     }
 
                     .settings {
@@ -584,12 +571,11 @@ img {
                         background-image: url(../images/icons/arrow-down.svg);
                         background-repeat: no-repeat;
                         background-position: 0px;
-
                         @include respond(tab-land) {
                             background-image: none;
-                            padding-left: 0;
-                            position: unset;
-                        }
+                             padding-left: 0;
+                             position: unset;
+                           }
                     }
 
                 }
@@ -598,94 +584,4 @@ img {
         }
 
     }
-
-    .plant-trees-content {
-        margin-top: 10px;
-
-        @include respond(phone) {
-            margin-top: 20px;
-            overflow: auto;
-            white-space: nowrap;
-            border-bottom: 2px solid #ededed;
-        }
-
-        .plant-trees-dropDown {
-            display: -webkit-inline-box;
-
-            @include respond(phone) {
-                margin-bottom: 3px;
-            }
-
-            .plant-trees-swiches {
-                margin-left: -150px;
-
-                @include respond(tab-land) {
-                    margin-left: 50px;
-                }
-
-                @include respond(phone) {
-                    margin-left: 21px;
-                }
-
-                .switch-wrap {
-                    cursor: pointer;
-                    background-color: rgba(0, 0, 0, .38);
-                    padding: 2px;
-                    width: 39px;
-                    height: 19px;
-                    border-radius: 10px;
-
-                    input {
-                        position: absolute;
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
-                    }
-                }
-
-                .switch {
-                    height: 100%;
-                    display: grid;
-                    grid-template-columns: 0fr 1fr 1fr;
-                    transition: .2s;
-
-                    //ICYMI, pseudo elements are treated as grid items
-                    &::after {
-                        height: 14px;
-                        width: 14px;
-                        content: '';
-                        border-radius: 50%;
-                        background: #ccc;
-                        grid-column: 2;
-                        transition: background .2s;
-                    }
-                }
-
-                input:checked {
-                    +.switch {
-                        grid-template-columns: 1fr 1fr 0fr;
-
-                        &::after {
-                            background-color: #52cf71;
-                        }
-                    }
-                }
-
-            }
-
-            .plant-trees-safeSearch {
-                margin-left: 60px;
-
-                @include respond(phone) {
-                    margin-left: 14px;
-                }
-            }
-
-            .plant-trees-anyTime {
-                margin-left: 20px;
-            }
-        }
-
-    }
-
 }

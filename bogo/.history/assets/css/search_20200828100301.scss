@@ -1,5 +1,8 @@
 $green: #54842a;
 $greenIn: #6fae2e;
+$width: 120px;
+$padding: 7px;
+$height: $width / 2 + $padding;
 // phone (maxwidth - 600px)
 // tab-land (600px – 900 px)
 // tab-port (900px – 1200px)
@@ -435,7 +438,6 @@ img {
             @include respond(phone) {
                 overflow: auto;
                 white-space: nowrap;
-                margin-left: -29px;
             }
 
             .plant-trees-menuOption {
@@ -599,93 +601,73 @@ img {
 
     }
 
-    .plant-trees-content {
-        margin-top: 10px;
+    .plant-trees-swiches {
+     
+        $width: 120px;
+        $padding: 7px;
+        $height: $width / 2 + $padding;
 
-        @include respond(phone) {
-            margin-top: 20px;
-            overflow: auto;
-            white-space: nowrap;
-            border-bottom: 2px solid #ededed;
+        //boring layout stuff:
+        html {
+            box-sizing: border-box;
+            height: 100%
         }
 
-        .plant-trees-dropDown {
-            display: -webkit-inline-box;
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
 
-            @include respond(phone) {
-                margin-bottom: 3px;
-            }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #f5f5f5;
+        }
 
-            .plant-trees-swiches {
-                margin-left: -150px;
+        //toggle code begins!
+        .switch-wrap {
+            cursor: pointer;
+            background: #15273b;
+            padding: $padding;
+            width: $width;
+            height: $height;
+            border-radius: $height / 2;
 
-                @include respond(tab-land) {
-                    margin-left: 50px;
-                }
-
-                @include respond(phone) {
-                    margin-left: 21px;
-                }
-
-                .switch-wrap {
-                    cursor: pointer;
-                    background-color: rgba(0, 0, 0, .38);
-                    padding: 2px;
-                    width: 39px;
-                    height: 19px;
-                    border-radius: 10px;
-
-                    input {
-                        position: absolute;
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
-                    }
-                }
-
-                .switch {
-                    height: 100%;
-                    display: grid;
-                    grid-template-columns: 0fr 1fr 1fr;
-                    transition: .2s;
-
-                    //ICYMI, pseudo elements are treated as grid items
-                    &::after {
-                        height: 14px;
-                        width: 14px;
-                        content: '';
-                        border-radius: 50%;
-                        background: #ccc;
-                        grid-column: 2;
-                        transition: background .2s;
-                    }
-                }
-
-                input:checked {
-                    +.switch {
-                        grid-template-columns: 1fr 1fr 0fr;
-
-                        &::after {
-                            background-color: #52cf71;
-                        }
-                    }
-                }
-
-            }
-
-            .plant-trees-safeSearch {
-                margin-left: 60px;
-
-                @include respond(phone) {
-                    margin-left: 14px;
-                }
-            }
-
-            .plant-trees-anyTime {
-                margin-left: 20px;
+            input {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
             }
         }
 
+        .switch {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 0fr 1fr 1fr;
+            transition: .2s;
+
+            //ICYMI, pseudo elements are treated as grid items
+            &::after {
+                content: '';
+                border-radius: 50%;
+                background: #ccc;
+                grid-column: 2;
+                transition: background .2s;
+            }
+        }
+
+        input:checked {
+            +.switch {
+                grid-template-columns: 1fr 1fr 0fr;
+
+                &::after {
+                    background-color: #52cf71;
+                }
+            }
+        }
     }
-
 }

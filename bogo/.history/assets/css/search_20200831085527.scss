@@ -435,7 +435,6 @@ img {
             @include respond(phone) {
                 overflow: auto;
                 white-space: nowrap;
-                margin-left: -29px;
             }
 
             .plant-trees-menuOption {
@@ -599,93 +598,66 @@ img {
 
     }
 
-    .plant-trees-content {
-        margin-top: 10px;
+    .plant-trees-swiches {
+        //HOW THIS WORKS:
+        //The 0fr column takes up no space (yet).
+        //The two 1fr columns are the toggle nub(??), and the ~visible~ empty space.
+        //When checked, the left column becomes 1fr and the right column becomes 0fr, creating the effect of the nub moving.
 
-        @include respond(phone) {
-            margin-top: 20px;
-            overflow: auto;
-            white-space: nowrap;
-            border-bottom: 2px solid #ededed;
-        }
+        //====================
 
-        .plant-trees-dropDown {
-            display: -webkit-inline-box;
+        //Change width or padding values freely :)
+        //But for the 'nub' to look perfectly circular (at 1fr, i.e. 50%), the toggle's height must be half its width, plus the padding value
+        $width: 120px;
+        $padding: 2px;
+        $height: $width / 2 + $padding;
 
-            @include respond(phone) {
-                margin-bottom: 3px;
-            }
+        //boring layout stuff:
 
-            .plant-trees-swiches {
-                margin-left: -150px;
 
-                @include respond(tab-land) {
-                    margin-left: 50px;
-                }
+        //toggle code begins!
+        .switch-wrap {
+            cursor: pointer;
+            background: #15273b;
+            padding: $padding;
+            width: 39px;
+            height: 19px;
+            border-radius: 10px;
 
-                @include respond(phone) {
-                    margin-left: 21px;
-                }
-
-                .switch-wrap {
-                    cursor: pointer;
-                    background-color: rgba(0, 0, 0, .38);
-                    padding: 2px;
-                    width: 39px;
-                    height: 19px;
-                    border-radius: 10px;
-
-                    input {
-                        position: absolute;
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
-                    }
-                }
-
-                .switch {
-                    height: 100%;
-                    display: grid;
-                    grid-template-columns: 0fr 1fr 1fr;
-                    transition: .2s;
-
-                    //ICYMI, pseudo elements are treated as grid items
-                    &::after {
-                        height: 14px;
-                        width: 14px;
-                        content: '';
-                        border-radius: 50%;
-                        background: #ccc;
-                        grid-column: 2;
-                        transition: background .2s;
-                    }
-                }
-
-                input:checked {
-                    +.switch {
-                        grid-template-columns: 1fr 1fr 0fr;
-
-                        &::after {
-                            background-color: #52cf71;
-                        }
-                    }
-                }
-
-            }
-
-            .plant-trees-safeSearch {
-                margin-left: 60px;
-
-                @include respond(phone) {
-                    margin-left: 14px;
-                }
-            }
-
-            .plant-trees-anyTime {
-                margin-left: 20px;
+            input {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
             }
         }
 
+        .switch {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 0fr 1fr 1fr;
+            transition: .2s;
+
+            //ICYMI, pseudo elements are treated as grid items
+            &::after {
+                height: 14px;
+                width: 14px;
+                content: '';
+                border-radius: 50%;
+                background: #ccc;
+                grid-column: 2;
+                transition: background .2s;
+            }
+        }
+
+        input:checked {
+            +.switch {
+                grid-template-columns: 1fr 1fr 0fr;
+
+                &::after {
+                    background-color: #52cf71;
+                }
+            }
+        }
     }
-
 }
