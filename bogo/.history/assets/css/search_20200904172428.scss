@@ -989,30 +989,15 @@ img {
     .plant-trees-searchNews{
         margin-top: 250px;
         margin-left: -103px;
-        @include respond(tab-land){
-            display: none;
-        }
         span{
             color: #353535;
             margin: 35px 0 15px;
             font-weight: 500;
             font-size: 20px;
             font-size: 1.25rem;
-            margin-bottom: 10px;
         }
         .item{
-            margin-top: 50px;
-            display: table-cell;
-            padding-right: 170px;
-            h5{
-                margin-top: 20px;
-                a{
-                    color: #1a0dab;
-                    font-weight: 400;
-                    font-size: 16px;
-                    font-size: .875rem;
-                }
-            }
+
         }
     }
 }

@@ -582,7 +582,8 @@ img {
 }
 
 .plant-trees-searchPage .plant-trees-content {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -605,7 +606,7 @@ img {
 }
 
 .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
-  margin-left: -150px;
+  margin-left: -97px;
 }
 
 @media (max-width: 1200px) {
@@ -679,5 +680,332 @@ img {
 
 .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-anyTime {
   margin-left: 20px;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft {
+  margin-left: -109px;
+  margin-right: 109px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-mainLeft {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-topStories {
+  font-family: Arial;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #353535;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .item .box {
+  background-color: #f3f4f6;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .item .box .boxNew {
+  padding: 20px;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .item .box .boxNew a {
+  color: #1a0dab;
+  text-decoration: none;
+  height: 44px;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .item .box .boxNew .webNewpager {
+  margin-top: 34px;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .item .box .boxNew .data {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #70757a;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav {
+  margin-top: -215px;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  left: -30px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-prev {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-prev:hover {
+  background: none;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-prev:focus {
+  outline: none;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-prev img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-next {
+  right: -30px;
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-next {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-next:hover {
+  background: none;
+}
+
+.plant-trees-mainNew .plant-trees-mainLeft .plant-trees-slider .owl-theme .owl-nav .owl-next:focus {
+  outline: none;
+}
+
+.plant-trees-mainNew .plant-trees-more {
+  margin-top: 250px;
+  margin-left: -106px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-more {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-more a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+.plant-trees-mainNew .plant-trees-more a img {
+  margin-right: 30px;
+  max-width: 15px;
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn {
+  margin-left: -103px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-tableColumn {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn .news {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-tableColumn .news {
+    background-color: #f1f1f1;
+    padding: 7px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
+  }
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn .news .title {
+  margin-bottom: 8px;
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn .news .title a {
+  width: 550px;
+  font-family: Arial;
+  font-size: 20px;
+  color: #1a0dab;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-tableColumn .news .title a {
+    width: 100%;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn .news .links a {
+  font-family: Arial;
+  font-size: 14px;
+  color: #006621;
+}
+
+.plant-trees-mainNew .plant-trees-tableColumn .news .content {
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #353535;
+}
+
+.plant-trees-mainNew .plant-trees-video {
+  margin-left: -103px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-video {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-video .video {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.plant-trees-mainNew .plant-trees-video .video span {
+  font-family: Arial;
+  font-size: 20px;
+  color: #353535;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .item .box {
+  background-color: #f3f4f6;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .item .box .boxNew {
+  padding: 20px;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .item .box .boxNew a {
+  color: #1a0dab;
+  text-decoration: none;
+  height: 44px;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .item .box .boxNew .webNewpager {
+  margin-top: 34px;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .item .box .boxNew .data {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #70757a;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav {
+  margin-top: -215px;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  left: -30px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-prev {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-prev:hover {
+  background: none;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-prev:focus {
+  outline: none;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-prev img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-next {
+  right: -30px;
+  position: absolute;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-next {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-next:hover {
+  background: none;
+}
+
+.plant-trees-mainNew .plant-trees-video .owl-theme .owl-nav .owl-next:focus {
+  outline: none;
+}
+
+.plant-trees-mainNew .plant-trees-searchNews {
+  margin-top: 250px;
+  margin-left: -103px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-searchNews {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-searchNews span {
+  color: #353535;
+  margin: 35px 0 15px;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.plant-trees-mainNew .plant-trees-searchNews .item {
+  margin-top: 50px;
+  display: table-cell;
+  padding-right: 170px;
+}
+
+.plant-trees-mainNew .plant-trees-searchNews .item h5 {
+  margin-top: 20px;
+}
+
+.plant-trees-mainNew .plant-trees-searchNews .item h5 a {
+  color: #1a0dab;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: .875rem;
 }
 /*# sourceMappingURL=search.css.map */

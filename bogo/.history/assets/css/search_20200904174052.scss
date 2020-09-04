@@ -989,9 +989,6 @@ img {
     .plant-trees-searchNews{
         margin-top: 250px;
         margin-left: -103px;
-        @include respond(tab-land){
-            display: none;
-        }
         span{
             color: #353535;
             margin: 35px 0 15px;
@@ -1009,7 +1006,7 @@ img {
                 a{
                     color: #1a0dab;
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-size: .875rem;
                 }
             }

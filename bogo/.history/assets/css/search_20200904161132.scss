@@ -751,10 +751,6 @@ img {
                         position: absolute;
                         left: -30px;
 
-                        @include respond(phone) {
-                            display: none;
-                        }
-
                         &:hover {
                             background: none;
                         }
@@ -779,10 +775,6 @@ img {
                         right: -30px;
                         position: absolute;
 
-                        @include respond(phone) {
-                            display: none;
-                        }
-
                         &:hover {
                             background: none;
                         }
@@ -799,8 +791,7 @@ img {
     .plant-trees-more {
         margin-top: 250px;
         margin-left: -106px;
-
-        @include respond(tab-land) {
+        @include respond(tab-land){
             margin-left: 0;
         }
 
@@ -818,25 +809,12 @@ img {
     .plant-trees-tableColumn {
         margin-left: -103px;
         margin-top: 50px;
-
-        @include respond(tab-land) {
+        @include respond(tab-land){
             margin-left: 0;
         }
 
         .news {
             margin-bottom: 30px;
-
-            @include respond(phone) {
-                background-color: #f1f1f1;
-                padding: 7px;
-                margin-bottom: 30px;
-                // border: 1px solid #dfe1e5;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-                -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-            }
 
             .title {
 
@@ -851,8 +829,7 @@ img {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: block;
-
-                    @include respond(phone) {
+                    @include respond(phone){
                         width: 100%;
                     }
                 }
@@ -879,15 +856,13 @@ img {
 
     .plant-trees-video {
         margin-left: -103px;
-
-        @include respond(tab-land) {
+        @include respond(tab-land){
             margin-left: 0;
         }
 
         .video {
             margin-top: 14px;
             margin-bottom: 30px;
-
             span {
                 font-family: Arial;
                 font-size: 20px;
@@ -899,12 +874,11 @@ img {
                 letter-spacing: normal;
             }
         }
-
         .owl-theme {
             .item {
                 .box {
                     background-color: #f3f4f6;
-
+                    
                     .boxNew {
                         padding: 20px;
 
@@ -941,11 +915,9 @@ img {
                 .owl-prev {
                     position: absolute;
                     left: -30px;
-
-                    @include respond(phone) {
+                    @include respond(phone){
                         display: none;
                     }
-
                     &:hover {
                         background: none;
                     }
@@ -969,11 +941,9 @@ img {
 
                     right: -30px;
                     position: absolute;
-
-                    @include respond(phone) {
+                    @include respond(phone){
                         display: none;
                     }
-
                     &:hover {
                         background: none;
                     }
@@ -981,36 +951,6 @@ img {
                     &:focus {
                         outline: none;
                     }
-                }
-            }
-        }
-    }
-
-    .plant-trees-searchNews{
-        margin-top: 250px;
-        margin-left: -103px;
-        @include respond(tab-land){
-            display: none;
-        }
-        span{
-            color: #353535;
-            margin: 35px 0 15px;
-            font-weight: 500;
-            font-size: 20px;
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-        .item{
-            margin-top: 50px;
-            display: table-cell;
-            padding-right: 170px;
-            h5{
-                margin-top: 20px;
-                a{
-                    color: #1a0dab;
-                    font-weight: 400;
-                    font-size: 16px;
-                    font-size: .875rem;
                 }
             }
         }

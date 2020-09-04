@@ -602,7 +602,6 @@ img {
     .plant-trees-content {
         margin-top: 20px;
         margin-bottom: 20px;
-
         @include respond(phone) {
             margin-top: 20px;
             overflow: auto;
@@ -691,45 +690,36 @@ img {
 
 }
 
-.plant-trees-mainNew {
-    .plant-trees-mainLeft {
+.plant-trees-mainNew{
+    .plant-trees-mainLeft{
         margin-left: -109px;
         margin-right: 109px;
-
-        @include respond(tab-land) {
+        @include respond(tab-land){
             margin-left: 0;
             margin-right: 0;
         }
-
-        .plant-trees-topStories {
+        .plant-trees-topStories{
             font-family: Arial;
             font-size: 20px;
             margin-bottom: 20px;
             color: #353535;
         }
-
-        .plant-trees-slider {
-            .owl-theme {
-                .item {
-                    .box {
+        .plant-trees-slider{
+            .owl-theme{
+                .item{
+                    .box{
                         background-color: #f3f4f6;
-
-                        .boxNew {
+                         .boxNew {
                             padding: 20px;
-
-                            a {
-                                color: #1a0dab;
-                                text-decoration: none;
+                            a{
                                 height: 44px;
                                 font-family: Arial;
                                 font-size: 16px;
                             }
-
-                            .webNewpager {
+                            .webNewpager{
                                 margin-top: 34px;
                             }
-
-                            .data {
+                            .data{
                                 font-family: Arial;
                                 font-size: 14px;
                                 font-weight: normal;
@@ -743,275 +733,48 @@ img {
                         }
                     }
                 }
-
-                .owl-nav {
+                .owl-nav{
                     margin-top: -215px;
-
-                    .owl-prev {
-                        position: absolute;
-                        left: -30px;
-
-                        @include respond(phone) {
-                            display: none;
-                        }
-
-                        &:hover {
-                            background: none;
-                        }
-
-                        &:focus {
-                            outline: none;
-                        }
-
-                        img {
-                            -moz-transform: scaleX(-1);
-                            -o-transform: scaleX(-1);
-                            -webkit-transform: scaleX(-1);
-                            transform: scaleX(-1);
-                            filter: FlipH;
-                            -ms-filter: "FlipH";
-
-                        }
-                    }
-
-                    .owl-next {
-
-                        right: -30px;
-                        position: absolute;
-
-                        @include respond(phone) {
-                            display: none;
-                        }
-
-                        &:hover {
-                            background: none;
-                        }
-
-                        &:focus {
-                            outline: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .plant-trees-more {
-        margin-top: 250px;
-        margin-left: -106px;
-
-        @include respond(tab-land) {
-            margin-left: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #1a0dab;
-
-            img {
-                margin-right: 30px;
-                max-width: 15px;
-            }
-        }
-    }
-
-    .plant-trees-tableColumn {
-        margin-left: -103px;
-        margin-top: 50px;
-
-        @include respond(tab-land) {
-            margin-left: 0;
-        }
-
-        .news {
-            margin-bottom: 30px;
-
-            @include respond(phone) {
-                background-color: #f1f1f1;
-                padding: 7px;
-                margin-bottom: 30px;
-                // border: 1px solid #dfe1e5;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-                -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.33);
-            }
-
-            .title {
-
-                margin-bottom: 8px;
-
-                a {
-                    width: 550px;
-                    font-family: Arial;
-                    font-size: 20px;
-                    color: #1a0dab;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: block;
-
-                    @include respond(phone) {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .links {
-                a {
-                    font-family: Arial;
-                    font-size: 14px;
-                    color: #006621;
-                }
-
-            }
-
-            .content {
-                margin-top: 10px;
-                font-family: Arial;
-                font-size: 14px;
-                line-height: 1.57;
-                color: #353535;
-            }
-        }
-    }
-
-    .plant-trees-video {
-        margin-left: -103px;
-
-        @include respond(tab-land) {
-            margin-left: 0;
-        }
-
-        .video {
-            margin-top: 14px;
-            margin-bottom: 30px;
-
-            span {
-                font-family: Arial;
-                font-size: 20px;
-                color: #353535;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-            }
-        }
-
-        .owl-theme {
-            .item {
-                .box {
-                    background-color: #f3f4f6;
-
-                    .boxNew {
-                        padding: 20px;
-
-                        a {
-                            color: #1a0dab;
-                            text-decoration: none;
-                            height: 44px;
-                            font-family: Arial;
-                            font-size: 16px;
-                        }
-
-                        .webNewpager {
-                            margin-top: 34px;
-                        }
-
-                        .data {
-                            font-family: Arial;
-                            font-size: 14px;
-                            font-weight: normal;
-                            font-stretch: normal;
-                            font-style: normal;
-                            line-height: normal;
-                            letter-spacing: normal;
-                            color: #70757a;
-                        }
-
-                    }
-                }
-            }
-
-            .owl-nav {
-                margin-top: -215px;
-
-                .owl-prev {
+                  .owl-prev{
                     position: absolute;
                     left: -30px;
-
-                    @include respond(phone) {
-                        display: none;
-                    }
-
-                    &:hover {
+                    &:hover{
                         background: none;
                     }
-
-                    &:focus {
+                    &:focus{
                         outline: none;
                     }
-
-                    img {
+                    img{
                         -moz-transform: scaleX(-1);
                         -o-transform: scaleX(-1);
                         -webkit-transform: scaleX(-1);
                         transform: scaleX(-1);
                         filter: FlipH;
                         -ms-filter: "FlipH";
-
+                     
                     }
                 }
-
-                .owl-next {
-
-                    right: -30px;
-                    position: absolute;
-
-                    @include respond(phone) {
-                        display: none;
-                    }
-
-                    &:hover {
-                        background: none;
-                    }
-
-                    &:focus {
-                        outline: none;
-                    }
+                .owl-next{
+                    
+                right: -30px;
+                position: absolute;
+                &:hover{
+                    background: none;
+                }
+                &:focus{
+                    outline: none;
+                }
                 }
             }
         }
+        }
     }
-
-    .plant-trees-searchNews{
+    .plant-trees-more{
         margin-top: 250px;
-        margin-left: -103px;
-        @include respond(tab-land){
-            display: none;
-        }
-        span{
-            color: #353535;
-            margin: 35px 0 15px;
-            font-weight: 500;
-            font-size: 20px;
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-        .item{
-            margin-top: 50px;
-            display: table-cell;
-            padding-right: 170px;
-            h5{
-                margin-top: 20px;
-                a{
-                    color: #1a0dab;
-                    font-weight: 400;
-                    font-size: 16px;
-                    font-size: .875rem;
-                }
+        margin-left: -106px;
+        a{
+            img{
+                max-width: 100px;
             }
         }
     }
