@@ -827,7 +827,7 @@ img {
             margin-bottom: 30px;
 
             @include respond(phone) {
-               
+                background-color: #f1f1f1;
                 padding: 7px;
                 margin-bottom: 30px;
                 // border: 1px solid #dfe1e5;
@@ -1032,11 +1032,9 @@ img {
             font-size: .8125rem;
             .about{
                 margin-top: 15px;
-                margin-bottom: 50px;
             }
             .resultBy{
                 margin-top: 15px;
-                margin-bottom: 50px;
                 right: 0;
                 position: absolute;
             }
@@ -1105,10 +1103,10 @@ img {
                 font-size: 100%;
                 padding: .5em;
                 &:focus {
-                    color: #6fae2e;
+                    color: #f60;
                 }
                 &:hover {
-                    color: #6fae2e;
+                    color: #f60;
                 }
             }
             li.current {

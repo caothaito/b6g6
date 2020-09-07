@@ -827,7 +827,7 @@ img {
             margin-bottom: 30px;
 
             @include respond(phone) {
-               
+                background-color: #f1f1f1;
                 padding: 7px;
                 margin-bottom: 30px;
                 // border: 1px solid #dfe1e5;
@@ -1101,7 +1101,7 @@ img {
                 font-size: 140%;
             }
             a {
-                color: #777;
+                // color: #777;
                 font-size: 100%;
                 padding: .5em;
                 &:focus {

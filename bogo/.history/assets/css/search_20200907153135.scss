@@ -827,7 +827,7 @@ img {
             margin-bottom: 30px;
 
             @include respond(phone) {
-               
+                background-color: #f1f1f1;
                 padding: 7px;
                 margin-bottom: 30px;
                 // border: 1px solid #dfe1e5;
@@ -1015,117 +1015,24 @@ img {
             }
         }
     }
-   
-    .plant-trees-results{
-        margin-top: 50px;
-        margin-left: -103px;
-        border-top: 1px solid #ededed;
-        @include respond(tab-land){
-            margin-top: 200px;
-            margin-left: 0;
-        }
-        .resultText{
-            display: flex;
-            color: #777;
-            font-weight: 400;
-            font-size: 13px;
-            font-size: .8125rem;
-            .about{
-                margin-top: 15px;
-                margin-bottom: 50px;
-            }
-            .resultBy{
-                margin-top: 15px;
-                margin-bottom: 50px;
-                right: 0;
-                position: absolute;
+    .web-Results {
+        margin-top: 10px;
+        display: inline-flex;
+        .about-left {
+            .about-right {
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #777777;
             }
         }
-        [data-pagination] {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-kerning: auto;
-            font-size: 22px;
-            line-height: 1;
-            font-weight: 400;
-            font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-            -webkit-text-size-adjust: 100%;
-            margin: 1em auto;
-            text-align: center;
-            transition: font-size .2s ease-in-out;
-            * {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                text-rendering: optimizeLegibility;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                font-kerning: auto;
-                &:before {
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                    text-rendering: optimizeLegibility;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                    font-kerning: auto;
-                }
-                &:after {
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                    text-rendering: optimizeLegibility;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                    font-kerning: auto;
-                }
-            }
-            ul {
-                list-style-type: none;
-                display: inline;
-                font-size: 100%;
-                margin: 0;
-                padding: .5em;
-                li {
-                    display: inline-block;
-                    font-size: 100%;
-                    width: auto;
-                    border-radius: 3px;
-                }
-            }
-            >a {
-                font-size: 140%;
-            }
-            a {
-                color: #777;
-                font-size: 100%;
-                padding: .5em;
-                &:focus {
-                    color: #6fae2e;
-                }
-                &:hover {
-                    color: #6fae2e;
-                }
-            }
-            li.current {
-                background: rgba(0,0,0,.1);
-            }
-            .disabled {
-                opacity: .5;
-                pointer-events: none;
-            }
-            [hidden] {
-                opacity: .5;
-                pointer-events: none;
-            }
-            [disabled] {
-                opacity: .5;
-                pointer-events: none;
-            }
+        .about-right {
+            position: absolute;
+            right: 0;
         }
     }
     

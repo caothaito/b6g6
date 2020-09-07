@@ -820,7 +820,6 @@ img {
 
 @media (max-width: 600px) {
   .plant-trees-mainNew .plant-trees-tableColumn .news {
-    background-color: #f1f1f1;
     padding: 7px;
     margin-bottom: 30px;
     border-radius: 10px;
@@ -1007,5 +1006,206 @@ img {
   font-weight: 400;
   font-size: 16px;
   font-size: .875rem;
+}
+
+.plant-trees-mainNew .plant-trees-results {
+  margin-top: 50px;
+  margin-left: -103px;
+  border-top: 1px solid #ededed;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .plant-trees-results {
+    margin-top: 200px;
+    margin-left: 0;
+  }
+}
+
+.plant-trees-mainNew .plant-trees-results .resultText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #777;
+  font-weight: 400;
+  font-size: 13px;
+  font-size: .8125rem;
+}
+
+.plant-trees-mainNew .plant-trees-results .resultText .about {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.plant-trees-mainNew .plant-trees-results .resultText .resultBy {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  right: 0;
+  position: absolute;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  margin: 1em auto;
+  text-align: center;
+  -webkit-transition: font-size .2s ease-in-out;
+  transition: font-size .2s ease-in-out;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] ul {
+  list-style-type: none;
+  display: inline;
+  font-size: 100%;
+  margin: 0;
+  padding: .5em;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] ul li {
+  display: inline-block;
+  font-size: 100%;
+  width: auto;
+  border-radius: 3px;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] > a {
+  font-size: 140%;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] a {
+  color: #777;
+  font-size: 100%;
+  padding: .5em;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] a:focus {
+  color: #6fae2e;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] a:hover {
+  color: #6fae2e;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] li.current {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] .disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] [hidden] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.plant-trees-mainNew .plant-trees-results [data-pagination] [disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.plant-trees-mainNew .resultRight {
+  margin-top: 80px;
+  height: 245px;
+  border-radius: 6px;
+  border: solid 1px #dfe1e5;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-mainNew .resultRight {
+    display: none;
+  }
+}
+
+.plant-trees-mainNew .resultRight .result {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+  margin: 24px 20px 23px 20px;
+}
+
+.plant-trees-mainNew .resultRight .result-1 {
+  margin: 24px 20px 23px 20px;
+}
+
+.plant-trees-mainNew .resultRight .result-1 .resultLink {
+  float: left;
+  width: 70%;
+}
+
+.plant-trees-mainNew .resultRight .result-1 .resultLink a {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1a0dab;
+}
+
+.plant-trees-mainNew .resultRight .result-1 .resultLink p {
+  margin-top: 8px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #111111;
+}
+
+.plant-trees-mainNew .resultRight .result-1 .textTra {
+  text-align: right;
+  float: left;
+  width: 30%;
 }
 /*# sourceMappingURL=search.css.map */
