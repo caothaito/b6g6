@@ -365,10 +365,7 @@ img {
                                 position: relative;
                                 border: 1px solid #dfe1e5;
                                 border-radius: 50%;
-                                @include respond(phone){
-                                    margin-right: 10px;
-                                    margin-left: unset;
-                                }
+
                                 .hambuger-inner {
                                     top: 12px;
                                     right: 10px;
@@ -605,11 +602,6 @@ img {
     .plant-trees-content {
         margin-top: 20px;
         margin-bottom: 20px;
-
-        @include respond(tab-port){
-            overflow: auto;
-            white-space: nowrap;
-        }
 
         @include respond(phone) {
             margin-top: 20px;
@@ -1056,10 +1048,6 @@ img {
                 margin-bottom: 50px;
                 right: 0;
                 position: absolute;
-                @include respond(phone){
-                    right: 14px;
-                    position: absolute;
-                }
             }
         }
 
@@ -1247,115 +1235,17 @@ img {
     -moz-box-shadow: 0 -1px 0 0 #dcdcdc;
     box-shadow: 0 -1px 0 0 #dcdcdc;
 
-    .footer-searchLeft {
-        margin-left: -103px;
-        @include respond(tab-land){
-            margin-left: 0;
-        }
-        .footer-magicBox {
-            @include respond(phone) {
-                overflow: auto;
-                white-space: nowrap;
-              
-            }
-            .magic-box-sroll{
-                flex: 1;
+    .footer-searchLef {
+        .footer-macgicBox {
+            flex: 1;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-      
-            @include respond(phone) {
-                width: 500px;
-                
-              }
-         
-                .item{
-                    color: #555;
-                    display: flex;
-                    margin-right: 10px;
-                    flex-direction: column;
-                    background-color: #fff;
-                    font-weight: 700;
-                    font-size: 14px;
-                    font-size: .875rem;
-                    border: 1px solid #d2d2d2;
-                    border-radius: 5px;
-                    -ms-border-radius: 5px;
-                    -moz-border-radius: 5px;
-                    -webkit-border-radius: 5px;
-                    -o-border-radius: 5px;
-                    padding: 15px 30px 18px 57px;
-                    background-repeat: no-repeat;
-                    width: calc(33.334% - 10px);
-                    background-position: 15px center;
-                    &:first-child{
-                        background-image: url('../images/search/detective.svg');
-                    }
-                    &:nth-child(2) {
-                        background-image: url('../images/search/secret-file.svg');
-                    }
-                    &:last-child{
-                        background-image: url('../images/search/search-1.svg');
-                    }
-                    
-                }
+            .item:first-child{
+                background-image: url('../images/search/detective.svg');
             }
-      
-    
-        }
-        .footer-magicMenu{
-            padding-top: 25px;
-            ul{ 
-                list-style-type: none;
-                padding-left: 0;
-                li{
-                    float: left;
-                    padding-right: 30px;
-                    @include respond(phone){
-                        display: inline-block;
-                        float: none;
-                    }
-                    a{
-                        color: #898989;
-                        line-height: 2.09;
-                        letter-spacing: 1.1px;
-                        font-weight: 600;
-                        font-size: 11px;
-                        font-size: .6875rem;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-    }
-    .footer-searchright{
-        padding-top: 25px;
-        margin-left: -50px;
-        @include respond(tab-land){
-            margin-left: 0;
-        }
-        ul{
-            list-style-type: none;
-            padding-left: 0;
-            li{
-                float: left;
-                padding-right: 30px;
-                @include respond(tab-land){
-                    padding-right: 10px;
-                }
-                @include respond(phone){
-                    display: inline-block;
-                    float: none;
-                }
-                a{
-                    color: #898989;
-                    line-height: 2.09;
-                    letter-spacing: 1.1px;
-                    font-weight: 600;
-                    font-size: 11px;
-                    font-size: .6875rem;
-                    text-transform: uppercase;
-                }
+            .item:nth-child(2){
+                background-image: url('../images/search/secret-file.svg');
             }
         }
     }

@@ -606,11 +606,6 @@ img {
         margin-top: 20px;
         margin-bottom: 20px;
 
-        @include respond(tab-port){
-            overflow: auto;
-            white-space: nowrap;
-        }
-
         @include respond(phone) {
             margin-top: 20px;
             overflow: auto;

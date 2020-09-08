@@ -365,10 +365,7 @@ img {
                                 position: relative;
                                 border: 1px solid #dfe1e5;
                                 border-radius: 50%;
-                                @include respond(phone){
-                                    margin-right: 10px;
-                                    margin-left: unset;
-                                }
+
                                 .hambuger-inner {
                                     top: 12px;
                                     right: 10px;
@@ -605,11 +602,6 @@ img {
     .plant-trees-content {
         margin-top: 20px;
         margin-bottom: 20px;
-
-        @include respond(tab-port){
-            overflow: auto;
-            white-space: nowrap;
-        }
 
         @include respond(phone) {
             margin-top: 20px;
@@ -1056,10 +1048,6 @@ img {
                 margin-bottom: 50px;
                 right: 0;
                 position: absolute;
-                @include respond(phone){
-                    right: 14px;
-                    position: absolute;
-                }
             }
         }
 
@@ -1254,8 +1242,7 @@ img {
         }
         .footer-magicBox {
             @include respond(phone) {
-                overflow: auto;
-                white-space: nowrap;
+              width: 600px;
               
             }
             .magic-box-sroll{
@@ -1263,11 +1250,11 @@ img {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-      
             @include respond(phone) {
-                width: 500px;
-                
-              }
+                overflow: auto;
+                white-space: nowrap;
+              
+            }
          
                 .item{
                     color: #555;
@@ -1311,10 +1298,6 @@ img {
                 li{
                     float: left;
                     padding-right: 30px;
-                    @include respond(phone){
-                        display: inline-block;
-                        float: none;
-                    }
                     a{
                         color: #898989;
                         line-height: 2.09;
@@ -1342,10 +1325,6 @@ img {
                 padding-right: 30px;
                 @include respond(tab-land){
                     padding-right: 10px;
-                }
-                @include respond(phone){
-                    display: inline-block;
-                    float: none;
                 }
                 a{
                     color: #898989;
