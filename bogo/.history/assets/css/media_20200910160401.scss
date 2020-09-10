@@ -33,27 +33,18 @@
 }
 
 @font-face {
-    font-family: Inter;
-    src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+    font-family: Montserrat;
+    src: url("../fonts/Inter-UI-Regular.ttf");
   }
   
 
 .plant-trees-press {
-@include respond(tab-port){
-    background-image: url('../images/press-center/press.png');
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-    
+   
     .plant-trees-pressCenter {
- 
-        .plant-pressLeft {
+        .plant-preessLeft {
             max-width: 480px;
             padding: 170px 0 225px;
-            @include respond(tab-land){
-                margin-left: 30px;
-            }
+
             .plant-trees-title {
                 color: #31343a;
                 margin-bottom: 20px;
@@ -63,27 +54,21 @@
             }
 
             .plant-trees-add {
-                position: absolute;
                 color: #fff;
                 padding: 10px;
                 min-width: 278px;
-                max-width: 278px;
+                  max-width: 278px;
                 text-align: center;
                 font-size: 16px;
                 margin-bottom: 15px;
                 border-radius: 3px;
+                -ms-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -o-border-radius: 3px;
                 background-color: #6fae2e;
                 font-family: Inter;
-                margin-top: 60px;
             }
-        }
-        .plant-tressRight{
-            @include respond(tab-port){
-                display: none;
-            }
-           img{
-               position: absolute;
-           }
         }
     }
 }

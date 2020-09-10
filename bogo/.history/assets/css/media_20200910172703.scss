@@ -39,12 +39,10 @@
   
 
 .plant-trees-press {
-@include respond(tab-port){
     background-image: url('../images/press-center/press.png');
     display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
-}
     
     .plant-trees-pressCenter {
  

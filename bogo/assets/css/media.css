@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+@media (max-width: 900px) {
+  .plant-trees-press {
+    background-image: url("../images/press-center/press.png");
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.plant-trees-press .plant-trees-pressCenter .plant-pressLeft {
+  max-width: 480px;
+  padding: 170px 0 225px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-press .plant-trees-pressCenter .plant-pressLeft {
+    margin-left: 30px;
+  }
+}
+
+.plant-trees-press .plant-trees-pressCenter .plant-pressLeft .plant-trees-title {
+  color: #31343a;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+.plant-trees-press .plant-trees-pressCenter .plant-pressLeft .plant-trees-add {
+  position: absolute;
+  color: #fff;
+  padding: 10px;
+  min-width: 278px;
+  max-width: 278px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #6fae2e;
+  font-family: Inter;
+  margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-press .plant-trees-pressCenter .plant-tressRight {
+    display: none;
+  }
+}
+
+.plant-trees-press .plant-trees-pressCenter .plant-tressRight img {
+  position: absolute;
+}
+/*# sourceMappingURL=media.css.map */

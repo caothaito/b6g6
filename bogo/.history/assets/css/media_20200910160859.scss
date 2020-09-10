@@ -39,21 +39,12 @@
   
 
 .plant-trees-press {
-@include respond(tab-port){
-    background-image: url('../images/press-center/press.png');
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-    
+   
     .plant-trees-pressCenter {
- 
-        .plant-pressLeft {
+        .plant-preessLeft {
             max-width: 480px;
             padding: 170px 0 225px;
-            @include respond(tab-land){
-                margin-left: 30px;
-            }
+
             .plant-trees-title {
                 color: #31343a;
                 margin-bottom: 20px;
@@ -76,14 +67,6 @@
                 font-family: Inter;
                 margin-top: 60px;
             }
-        }
-        .plant-tressRight{
-            @include respond(tab-port){
-                display: none;
-            }
-           img{
-               position: absolute;
-           }
         }
     }
 }

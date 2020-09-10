@@ -39,15 +39,9 @@
   
 
 .plant-trees-press {
-@include respond(tab-port){
-    background-image: url('../images/press-center/press.png');
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-    
+   
     .plant-trees-pressCenter {
- 
+        background-image: url('../images/press-center/press.png');
         .plant-pressLeft {
             max-width: 480px;
             padding: 170px 0 225px;
@@ -78,9 +72,6 @@
             }
         }
         .plant-tressRight{
-            @include respond(tab-port){
-                display: none;
-            }
            img{
                position: absolute;
            }
