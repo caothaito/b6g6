@@ -292,23 +292,20 @@
 
     .plant-betterWorld-right {
         padding-top: 60%;
-        @include respond(tab-port){
-            padding-top: 14%;
-        }
+
         .plant-betterWorld-title {
             color: #31343a;
             max-width: 420px;
             position: relative;
             font-weight: 700;
             font-size: 33px;
-            font-size: 2.0625rem;
+
             &:after {
                 left: 0;
                 top: -28px;
                 content: '';
                 width: 44px;
                 height: 5px;
-                font-size: 1.0625rem;
                 position: absolute;
                 background-color: #6fae2e;
             }
