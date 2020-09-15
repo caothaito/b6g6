@@ -644,6 +644,13 @@ img {
   padding-right: 50px;
 }
 
+@media (max-width: 600px) {
+  .footer-home .footer-top .footer-top-left ul li {
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .footer-home .footer-top .footer-top-left ul li a {
   color: #333;
   line-height: 1.92;
@@ -658,6 +665,12 @@ img {
 .footer-home .footer-top .footer-top-right {
   float: right;
   text-align: end;
+}
+
+@media (max-width: 600px) {
+  .footer-home .footer-top .footer-top-right {
+    text-align: center;
+  }
 }
 
 .footer-home .footer-top .footer-top-right a {

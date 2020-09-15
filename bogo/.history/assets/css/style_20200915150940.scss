@@ -770,9 +770,6 @@ img {
     .footer-top-right {
       float: right;
       text-align: end;
-      @include respond(phone){
-        text-align: center;
-      }
       a {
         margin-left: 15px;
         color: #333;
