@@ -208,8 +208,6 @@ img {
                 }
             }
             .plant-monthContent{
-                list-style-type: none;
-                padding-left: 0;
                 li{
                     font-size: 17px;
                     font-weight: 500;
@@ -223,9 +221,8 @@ img {
                     }
                     a{
                         text-decoration: none;
-                        color: #539015;
                         img{
-                            width: 12%;
+                           
                         }
                     }
                 }

@@ -1,0 +1,65 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+
+.plant-trees-financial{
+    background-image: url('../images/financial/asset-1.svg') no-repeat center;;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    .plant-financialLeft{
+       
+        padding: 170px 0 225px;
+        .financial-title{
+            color: #31343a;
+            padding: 0 12px 5px;
+            font-weight: 700;
+            font-size: 40px;
+            font-size: 2.5rem;
+            font-family: Inter;
+        }
+        .financial-desc{
+            padding: 180px 250px 0px 250px;
+            font-family: InterUI;
+            font-size: 17px;
+            line-height: 1.88;
+            color: #666666;
+        }
+    }
+}

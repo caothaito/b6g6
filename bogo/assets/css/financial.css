@@ -1,1 +1,214 @@
-/* No CSS *//*# sourceMappingURL=financial.css.map */
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+img {
+  width: 100%;
+}
+
+.plant-trees-financial {
+  background-image: url("../images/financial/asset-1.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-financial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.plant-trees-financial .plant-financialLeft {
+  padding: 170px 0 430px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-financial .plant-financialLeft {
+    padding: 170px 0 0px 0;
+  }
+}
+
+.plant-trees-financial .plant-financialLeft .financial-title {
+  color: #31343a;
+  padding: 0 12px 5px;
+  font-weight: 700;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-family: Inter;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-financial .plant-financialLeft .financial-title {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-financial .plant-financialLeft .financial-title {
+    font-size: 23px;
+  }
+}
+
+.plant-trees-financial .plant-financialLeft .financial-desc {
+  padding: 0 250px 100px 250px;
+  font-family: Inter;
+  font-size: 17px;
+  line-height: 1.88;
+  color: #666666;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-financial .plant-financialLeft .financial-desc {
+    padding: 0 0 100px 0;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-financial .plant-financialLeft .financial-desc {
+    font-size: 13px;
+  }
+}
+
+.plant-trees-transparent {
+  margin-top: 100px;
+}
+
+.plant-trees-transparent .plant-transparentRight {
+  padding-top: 30px;
+}
+
+.plant-trees-transparent .plant-transparentRight .transparent-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  color: #31343a;
+  margin-bottom: 30px;
+}
+
+.plant-trees-transparent .plant-transparentRight .transparent-desc {
+  font-family: InterUI;
+  font-size: 17px;
+  line-height: 1.82;
+  color: #373737;
+}
+
+.plant-trees-ourStrategy {
+  margin-top: 100px;
+  background-color: #f7f9fa;
+}
+
+.plant-trees-ourStrategy .plant-trees-titleOur {
+  margin-bottom: 50px;
+}
+
+.plant-trees-ourStrategy .plant-trees-titleOur .plant-trees-title {
+  font-family: Inter;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.08;
+  color: #333333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft {
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft ul {
+  padding-left: 0;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft ul li {
+  margin-top: 30px;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyLeft img {
+  width: 70%;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthlyTitle {
+  border-bottom: 1px solid #6f7276;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 10px;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthlyTitle span {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  color: #31343a;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthlyTitle select {
+  cursor: pointer;
+  border-radius: 18px;
+  border: none;
+  font-family: Inter;
+  font-size: 16px;
+  color: #4b4b4b;
+  padding: 8px 30px 8px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #dcefd3;
+  background-image: url(../images/financial/path.svg);
+  background-repeat: no-repeat;
+  background-position: 106px   center;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthContent {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthContent li {
+  font-size: 17px;
+  font-weight: 500;
+  color: #31343a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid #d1d2d3;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthContent li a {
+  text-decoration: none;
+  color: #539015;
+}
+
+.plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthContent li a img {
+  width: 12%;
+}
+/*# sourceMappingURL=financial.css.map */

@@ -1,0 +1,294 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+img {
+    width: 100%;
+}
+
+.plant-trees-financial {
+    background-image: url('../images/financial/asset-1.svg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: relative;
+
+    &::before {
+        @include respond(tab-port) {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .6);
+        }
+    }
+
+    .plant-financialLeft {
+
+        padding: 170px 0 430px;
+
+        @include respond(tab-port) {
+            padding: 170px 0 0px 0;
+        }
+
+        .financial-title {
+            color: #31343a;
+            padding: 0 12px 5px;
+            font-weight: 700;
+            font-size: 40px;
+            font-size: 2.5rem;
+            font-family: Inter;
+
+            @include respond(tab-port) {
+                color: #ffffff;
+            }
+
+            @include respond(phone) {
+                font-size: 23px;
+            }
+        }
+
+        .financial-desc {
+            padding: 0 250px 100px 250px;
+            font-family: Inter;
+            font-size: 17px;
+            line-height: 1.88;
+            color: #666666;
+
+            @include respond(tab-port) {
+                padding: 0 0 100px 0;
+                color: #ffffff;
+            }
+
+            @include respond(phone) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.plant-trees-transparent {
+    margin-top: 100px;
+
+    .plant-transparentLeft {}
+
+    .plant-transparentRight {
+        padding-top: 30px;
+
+        .transparent-title {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: bold;
+            color: #31343a;
+            margin-bottom: 30px;
+        }
+
+        .transparent-desc {
+            font-family: InterUI;
+            font-size: 17px;
+            line-height: 1.82;
+            color: #373737;
+        }
+    }
+}
+
+.plant-trees-ourStrategy {
+    margin-top: 100px;
+    background-color: #f7f9fa;
+    .plant-trees-titleOur {
+     margin-bottom: 50px;
+        .plant-trees-title {
+            font-family: Inter;
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 1.08;
+            color: #333333;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .plant-trees-contentOur {
+        .plant-contentLeft {
+     
+            .our-primary-focus {}
+            // font-family: Inter;
+            font-size: 17px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: normal;
+            color: #666666;
+            margin-bottom: 30px;
+            ul{
+                padding-left: 0;
+                li {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .plant-trees-monthlyLeft{
+
+        }
+        .plant-trees-monthlyRight{
+            .select-box {
+                position: relative;
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+                font-size: 18px;
+                color: #60666d;
+                
+                @media (min-width: 768px) {
+                  width: 70%;
+                }
+                
+                @media (min-width: 992px) {
+                  width: 50%;
+                }
+                
+                @media (min-width: 1200px) {
+                  width: 30%;
+                }
+                
+                &__current {
+                  position: relative;
+                  box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+                  cursor: pointer;
+                  outline: none;
+                  
+                  &:focus {
+                    & + .select-box__list {
+                      opacity: 1;
+              
+                      // We have to set "animation-name: none;" to make the list visible (read below how it works)
+              
+                      animation-name: none;
+                      
+                      .select-box__option {
+                        cursor: pointer;
+                      }
+                    }
+                    
+                    .select-box__icon {
+                      transform: translateY(-50%) rotate(180deg);
+                    }
+                  }
+                }
+                
+                &__icon {
+                  position: absolute;
+                  top: 50%;
+                  right: 15px;
+                  transform: translateY(-50%);
+                  width: 20px;
+                  opacity: 0.3;
+                  transition: 0.2s ease;
+                }
+                
+                &__value {
+                  display: flex;
+                }
+                
+                &__input {
+                  display: none;
+                  
+                  &:checked + .select-box__input-text {
+                    display: block;
+                  }
+                }
+                
+                &__input-text {
+                  display: none;
+                  width: 100%;
+                  margin: 0;
+                  padding: 15px;
+                  background-color: #fff;
+                }
+                
+                &__list {
+                  position: absolute;
+                  width: 100%;
+                  padding: 0;
+                  list-style: none;
+                  opacity: 0;
+                  
+                  // We need to use animation with delay.
+                  // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+                  // This delay will not be noticed because we set "opacity" to "0".
+                  // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+                  
+                  animation-name: HideList;
+                  animation-duration: 0.5s;
+                  animation-delay: 0.5s;
+                  animation-fill-mode: forwards;
+                  animation-timing-function: step-start;
+                  box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+                }
+                
+                &__option {
+                  display: block;
+                  padding: 15px;
+                  background-color: #fff;
+                  
+                  &:hover,
+                  &:focus {
+                    color: #546c84;
+                    background-color: #fbfbfb;
+                  }
+                }
+              }
+              
+              @keyframes HideList {
+                from {
+                  transform: scaleY(1);
+                }
+                to {
+                  transform: scaleY(0);
+                }
+              }
+        }
+    }
+}

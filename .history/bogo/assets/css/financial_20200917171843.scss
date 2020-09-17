@@ -173,11 +173,7 @@ img {
             }
         }
 
-        .plant-trees-monthlyLeft {
-            img{
-                width: 70%;
-            }
-        }
+        .plant-trees-monthlyLeft {}
 
         .plant-trees-monthlyRight {
             .plant-monthlyTitle {
@@ -196,36 +192,22 @@ img {
                     cursor: pointer;
                     border-radius: 18px;
                     border: none;
-                    font-family: Inter;
+                    font-family: InterUI;
                     font-size: 16px;
                     color: #4b4b4b;
                     padding: 8px 30px 8px 15px;
                     appearance: none;
-                    background: #dcefd3 ;
-                    background-image: url(../images/financial/path.svg);
-                     background-repeat: no-repeat;
-                     background-position: 106px   center;
                 }
             }
             .plant-monthContent{
-                list-style-type: none;
-                padding-left: 0;
                 li{
-                    font-size: 17px;
-                    font-weight: 500;
-                    color: #31343a;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 13px 0;
-                    border-bottom: 1px solid #d1d2d3;
                     span{
 
                     }
                     a{
                         text-decoration: none;
-                        color: #539015;
                         img{
-                            width: 12%;
+                            width: 2%;
                         }
                     }
                 }

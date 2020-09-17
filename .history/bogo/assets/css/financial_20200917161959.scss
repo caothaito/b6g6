@@ -132,11 +132,8 @@ img {
 
 .plant-trees-ourStrategy {
     margin-top: 100px;
-    background-color: #f7f9fa;
-
     .plant-trees-titleOur {
-        margin-bottom: 50px;
-
+     margin-bottom: 50px;
         .plant-trees-title {
             font-family: Inter;
             font-size: 52px;
@@ -151,10 +148,7 @@ img {
 
     .plant-trees-contentOur {
         .plant-contentLeft {
-
-            .our-primary-focus {}
-
-            // font-family: Inter;
+            font-family: Inter;
             font-size: 17px;
             font-weight: normal;
             font-stretch: normal;
@@ -162,74 +156,9 @@ img {
             line-height: 1.88;
             letter-spacing: normal;
             color: #666666;
-            margin-bottom: 30px;
+            .our-primary-focus {}
 
-            ul {
-                padding-left: 0;
-
-                li {
-                    margin-top: 30px;
-                }
-            }
-        }
-
-        .plant-trees-monthlyLeft {
-            img{
-                width: 70%;
-            }
-        }
-
-        .plant-trees-monthlyRight {
-            .plant-monthlyTitle {
-                border-bottom: 1px solid #6f7276;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 0 10px;
-                span{
-                    font-family: Inter;
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: #31343a;
-                }
-                select {
-                    cursor: pointer;
-                    border-radius: 18px;
-                    border: none;
-                    font-family: Inter;
-                    font-size: 16px;
-                    color: #4b4b4b;
-                    padding: 8px 30px 8px 15px;
-                    appearance: none;
-                    background: #dcefd3 ;
-                    background-image: url(../images/financial/path.svg);
-                     background-repeat: no-repeat;
-                     background-position: 106px   center;
-                }
-            }
-            .plant-monthContent{
-                list-style-type: none;
-                padding-left: 0;
-                li{
-                    font-size: 17px;
-                    font-weight: 500;
-                    color: #31343a;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 13px 0;
-                    border-bottom: 1px solid #d1d2d3;
-                    span{
-
-                    }
-                    a{
-                        text-decoration: none;
-                        color: #539015;
-                        img{
-                            width: 12%;
-                        }
-                    }
-                }
-            }
+            ul>li {}
         }
     }
 }
