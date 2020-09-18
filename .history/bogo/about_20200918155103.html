@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ==============fontawesome=== -->
+    <script src="https://kit.fontawesome.com/c28984a6f5.js" crossorigin="anonymous"></script>
+    <!-- ================owl================== -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- =========================== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+ 
+</head>
+
+<body>
+    <div class="plant-trees-main main-contact-us float-left w-100">
+        <div class="plant-trees-home  float-left w-100">
+            <div class="plant-trees-home-searchTop float-left w-100 ">
+                <a href="#" class="plant-trees-topLogo" id="topLogo">
+                    <img src="./assets/images/logo.svg" alt="" class="plant-trees-logo">
+                </a>
+                <div class="plant-trees-searchRight float-right ">
+                    <div class="plant-trees-account">
+                        <div class="plant-trees-account-info" style="display:none">
+                            <div class="item float-left ">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/square.svg" alt="square.svg">
+                                </div>
+                                <div class="content float-right">
+                                    <div class="title">Get Our App & Extension</div>
+                                    <div class="desc">Protect your date on every device.</div>
+                                </div>
+                            </div>
+                            <div class="item float-left ">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/file.svg" alt="file.svg">
+                                </div>
+                                <div class="content float-right">
+                                    <div class="title">Your searches are private</div>
+                                    <div class="desc">We don't need to know what you do online. We don't record them.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item float-left ">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/browser.svg" alt="browser.svg">
+                                </div>
+                                <div class="content float-right">
+                                    <div class="title">Your Searches Are Encrypted</div>
+                                    <div class="desc">We protect your search behavior with encrypted connection.</div>
+                                </div>
+                            </div>
+                            <div class="item float-left ">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/secret-file.svg" alt="secret-file.svg">
+                                </div>
+                                <div class="content float-right">
+                                    <div class="title">No tracking. No profiling</div>
+                                    <div class="desc">We block hidden third-party trackers. We don't sell user's date.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plant-trees-menu-mobile float-right">
+                        <div class="nav-toggle">
+                            <div class="nav-toggle-bar"></div>
+                        </div>
+                        <nav class="nav">
+                            <ul>
+                                <li class="menu-item menu-item-settings">
+                                    <div class="wrap-link-item">
+                                        <a href="#" title="Settings">Settings</a></div>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#" title="Themes">Themes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Other settings">Other settings</a></li>
+                                        <li>
+                                            <a href="#" title="!Bang Search Shortcuts">!Bang SearchShortcuts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+    <!-- ====footer=== -->
+    <footer class="footer-home float-left w-100">
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-top float-left w-100">
+                        <div class="footer-top-left col-md-7 col-sm-12 col-xs-12">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">How it work</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-top-right col-md-5 col-sm-12 col-xs-12">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".plant-trees-account").click(function () {
+                $(".plant-trees-account-info").slideToggle();
+            })
+        })
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                480: {
+                    items: 2
+                },
+                768: {
+                    items: 3,
+                },
+                1000: {
+                    items: 3,
+                }
+            }
+        })
+    </script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script src="./assets/js/main.js"></script>
+
+</html>

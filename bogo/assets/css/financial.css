@@ -115,12 +115,27 @@ img {
 .plant-trees-ourStrategy .plant-trees-titleOur .plant-trees-title {
   font-family: Inter;
   font-size: 52px;
+  margin-top: 50px;
   font-weight: 600;
   line-height: 1.08;
   color: #333333;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-ourStrategy .plant-trees-titleOur .plant-trees-title {
+    font-size: 24px;
+    max-width: 251px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-ourStrategy .plant-trees-contentOur .plant-contentRight img {
+    width: 88%;
+    margin-bottom: 20px;
+  }
 }
 
 .plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft {
@@ -138,12 +153,25 @@ img {
   padding-left: 0;
 }
 
+@media (max-width: 600px) {
+  .plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft ul {
+    padding-left: revert;
+  }
+}
+
 .plant-trees-ourStrategy .plant-trees-contentOur .plant-contentLeft ul li {
   margin-top: 30px;
 }
 
 .plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyLeft img {
   width: 70%;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyLeft img {
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
 .plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthlyTitle {
@@ -210,5 +238,73 @@ img {
 
 .plant-trees-ourStrategy .plant-trees-contentOur .plant-trees-monthlyRight .plant-monthContent li a img {
   width: 12%;
+}
+
+.plant-trees-how {
+  margin-top: 100px;
+}
+
+.plant-trees-how .plant-howRight {
+  background-size: cover;
+  background: url(../images/financial/group-6-copy-2.svg) right bottom;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 80px 0 80px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-how .plant-howRight {
+    padding: 14px 30px 0 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .plant-trees-how .plant-howRight {
+    padding: 30px;
+  }
+}
+
+.plant-trees-how .plant-howRight .plant-howRight-title span {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.23;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-how .plant-howRight .plant-howRight-title span {
+    font-size: 30px;
+  }
+}
+
+.plant-trees-how .plant-howRight .plant-howRight-title .green-stick {
+  z-index: 3;
+  margin-top: 20px;
+  height: 5px;
+  width: 55px;
+  background-color: #6fae2e;
+}
+
+.plant-trees-how .plant-howRight .plant-howRight-desc {
+  margin-top: 30px;
+}
+
+.plant-trees-how .plant-howRight .plant-howRight-desc div {
+  font-size: 17px;
+  line-height: 1.53;
+  color: #ededf0;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-how .plant-howRight .plant-howRight-desc div {
+    font-size: 15px;
+  }
+}
+
+.plant-trees-how .plant-howRight .plant-howRight-desc div:first-child {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=financial.css.map */
