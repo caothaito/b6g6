@@ -1,0 +1,74 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+
+img {
+    width: 100%;
+}
+
+.plant-trees-about{
+    background-image: url('../images/about/asset-1.jpg') ;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: relative;
+    .plant-about-content{
+        padding: 170px 0 430px;
+        .plant-about-title{
+            font-family: Poppins;
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 1.08;
+            text-align: center;
+            color: #ffffff;
+        }
+        .plant-about-desc{
+            font-family: InterUI;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}

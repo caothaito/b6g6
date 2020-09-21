@@ -1,1 +1,280 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+img {
+  width: 100%;
+}
+
+.plant-trees-about {
+  background-image: url("../images/about/asset-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  position: relative;
+}
+
+.plant-trees-about .plant-about-content {
+  padding: 170px 0 430px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-about .plant-about-content {
+    padding: 150px 0 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-about .plant-about-content {
+    padding: 60px 0 34px;
+  }
+}
+
+.plant-trees-about .plant-about-content .plant-about-title {
+  margin-top: 50px;
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.08;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-about .plant-about-content .plant-about-title {
+    font-size: 26px;
+  }
+}
+
+.plant-trees-about .plant-about-content .plant-about-desc {
+  margin-top: 30px;
+  max-width: 660px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-about .plant-about-content .plant-about-desc {
+    font-size: 17px;
+  }
+}
+
+.plant-trees-aboutUs .plant-aboutUs {
+  margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-aboutUs .plant-aboutUs {
+    margin-top: 7px;
+  }
+}
+
+.plant-trees-aboutUs .plant-aboutUs .plant-aboutUs-title {
+  font-family: Inter;
+  font-size: 24px;
+  color: #31343a;
+}
+
+.plant-trees-aboutUs .plant-aboutUs .plant-aboutUs-desc p {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.69;
+  color: #373737;
+}
+
+.plant-trees-little {
+  margin-top: 50px;
+}
+
+.plant-trees-little .plant-content-little .plant-little-title {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.08;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-little .plant-content-little .plant-little-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-little .plant-content-little .plant-little-desc {
+    font-size: 15px;
+  }
+}
+
+.plant-trees-little .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 40px;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-little .row {
+    padding-left: 0;
+  }
+}
+
+.plant-trees-little .row .plant-littleLeft img:first-child {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.plant-trees-ourPlans {
+  margin-top: 60px;
+  background-color: #f7f9fa;
+}
+
+.plant-trees-ourPlans .plant-uorPlans-title {
+  margin-top: 30px;
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.08;
+  text-align: center;
+  color: #333333;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-ourPlans .plant-uorPlans-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-ourPlans .plant-uorPlans-title {
+    font-size: 21px;
+  }
+}
+
+.plant-trees-uorFisrt {
+  margin-top: 30px;
+}
+
+.plant-trees-uorFisrt p .number {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.plant-trees-theTeam {
+  margin-top: 60px;
+}
+
+.plant-trees-theTeam .plant-theTeam-content .plant-theTeam-title {
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.08;
+  text-align: center;
+  color: #333333;
+}
+
+@media (max-width: 900px) {
+  .plant-trees-theTeam .plant-theTeam-content .plant-theTeam-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .plant-trees-theTeam .plant-theTeam-content .plant-theTeam-title {
+    font-size: 21px;
+  }
+}
+
+.plant-trees-theTeam .plant-theTeam-content .plant-theTeam-desc {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.88;
+  text-align: center;
+  color: #666666;
+}
+
+.plant-trees-theTeam .item {
+  margin-top: 30px;
+  padding: 25px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-theTeam .item {
+    padding: 0;
+  }
+}
+
+.plant-trees-theTeam .item img {
+  border: 6px solid transparent;
+  border-radius: 100%;
+  padding: 8px;
+}
+
+.plant-trees-theTeam .item img:hover {
+  border: solid 6px #6aaf47;
+}
+
+.plant-trees-theTeam .item h3 {
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #333;
+  margin: 5px 0 0;
+  text-align: center;
+}
+
+.plant-trees-theTeam .item p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: .1px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.plant-trees-theTeam .item:hover .icon {
+  opacity: 1;
+}
+
+.plant-trees-theTeam .item ul {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-theTeam .item ul {
+    opacity: inherit;
+  }
+}
+
+.plant-trees-theTeam .item ul li > a {
+  color: #999;
+  margin-right: 18px;
+}
+/*# sourceMappingURL=about.css.map */

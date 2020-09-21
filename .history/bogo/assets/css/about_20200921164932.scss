@@ -1,0 +1,295 @@
+    @mixin respond($breakpoint) {
+        @if $breakpoint==phone {
+            @media (max-width: 600px) {
+                @content
+            }
+
+            ; //600px
+        }
+
+        @if $breakpoint==tab-port {
+            @media (max-width: 900px) {
+                @content
+            }
+
+            ; //900px
+        }
+
+        @if $breakpoint==tab-land {
+            @media (max-width: 1200px) {
+                @content
+            }
+
+            ; //1200px
+        }
+
+        @if $breakpoint==big-desktop {
+            @media (min-width: 1800px) {
+                @content
+            }
+
+            ; //1800px
+        }
+    }
+
+    @font-face {
+        font-family: Inter;
+        src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/Montserrat-Medium.ttf');
+    }
+
+
+    img {
+        width: 100%;
+    }
+
+    .plant-trees-about {
+        background-image: url('../images/about/asset-1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        position: relative;
+
+        .plant-about-content {
+            padding: 170px 0 430px;
+
+            @include respond(tab-port) {
+                padding: 150px 0 130px
+            }
+
+            @include respond(phone) {
+                padding: 60px 0 34px;
+            }
+
+            .plant-about-title {
+                margin-top: 50px;
+                font-family: Poppins;
+                font-size: 52px;
+                font-weight: 600;
+                line-height: 1.08;
+                text-align: center;
+                color: #ffffff;
+
+                @include respond(phone) {
+                    font-size: 26px;
+                }
+            }
+
+            .plant-about-desc {
+                margin-top: 30px;
+                max-width: 660px;
+                font-size: 20px;
+                line-height: 1.6;
+                text-align: center;
+                color: #ffffff;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include respond(phone) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .plant-trees-aboutUs {
+        .plant-about-light {}
+
+        .plant-aboutUs {
+            margin-top: 100px;
+
+            @include respond(tab-port) {
+                margin-top: 7px;
+            }
+
+            .plant-aboutUs-title {
+                font-family: Inter;
+                font-size: 24px;
+                color: #31343a;
+            }
+
+            .plant-aboutUs-desc {
+                p {
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    line-height: 1.69;
+                    color: #373737;
+                }
+            }
+        }
+    }
+
+
+    .plant-trees-little {
+        margin-top: 50px;
+
+        .plant-content-little {
+            .plant-little-title {
+                font-family: Poppins;
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 1.08;
+                color: #333333;
+                margin-bottom: 40px;
+
+                @include respond(tab-land) {
+                    font-size: 30px;
+                }
+
+            }
+
+            .plant-little-desc {
+                @include respond(tab-land) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: flex-end;
+            padding-left: 40px;
+
+            @include respond(tab-port) {
+                padding-left: 0;
+
+            }
+
+            .plant-littleRight {}
+
+            .plant-littleLeft {
+                img {
+                    &:first-child {
+                        padding-bottom: 30px;
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .plant-trees-ourPlans {
+        margin-top: 60px;
+        background-color: #f7f9fa;
+
+        .plant-uorPlans-title {
+            margin-top: 30px;
+            font-family: Poppins;
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 1.08;
+            text-align: center;
+            color: #333333;
+
+            @include respond(tab-port) {
+                font-size: 40px;
+            }
+
+            @include respond(phone) {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .plant-trees-uorFisrt {
+        margin-top: 30px;
+
+        p {
+            .number {
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 600;
+                color: #333333;
+            }
+        }
+    }
+
+    .plant-trees-theTeam {
+        margin-top: 60px;
+
+        .plant-theTeam-content {
+            .plant-theTeam-title {
+                font-family: Poppins;
+                font-size: 52px;
+                font-weight: 600;
+                line-height: 1.08;
+                text-align: center;
+                color: #333333;
+
+                @include respond(tab-port) {
+                    font-size: 40px;
+                }
+
+                @include respond(phone) {
+                    font-size: 21px;
+                }
+            }
+
+            .plant-theTeam-desc {
+                margin-top: 20px;
+                font-size: 17px;
+                line-height: 1.88;
+                text-align: center;
+                color: #666666;
+            }
+        }
+
+        .item {
+            padding: 25px;
+
+            img {
+                border: 6px solid transparent;
+                border-radius: 100%;
+                padding: 8px;
+                &:hover{
+                    border: solid 6px #6aaf47;
+                }
+            }
+
+            h3 {
+                font-family: poppins;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.6;
+                color: #333;
+                margin: 5px 0 0;
+                text-align: center;
+
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                line-height: 1.63;
+                letter-spacing: .1px;
+                color: #666;
+                margin: 0 0 10px;
+            }
+            &:hover{
+                .icon{
+                   
+                       display: ;
+                  
+                }
+            }
+            .icon {
+                display: none;
+                display: flex;
+                list-style-type: none;
+                justify-content: center;
+                padding-left: 0;
+
+                li>a {
+                    color: #999;
+                    margin-right: 18px;
+                }
+            }
+
+        }
+    }
