@@ -1,0 +1,165 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content;
+        }
+
+        //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content;
+        }
+
+        //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content;
+        }
+
+        //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content;
+        }
+
+        //1800px
+    }
+}
+
+@font-face {
+    font-family: 'InterUI';
+    src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Semibold ';
+    src: url('../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf');
+}
+@media only screen and (max-width: 1337px){
+    .plant-trees-settings{
+        margin-left: 0;
+    }
+    }
+
+.plant-trees-settings {
+    margin-left: -110px;
+ 
+
+    .plant-settingRight {
+        padding-left: 20px;
+
+        .plant-settingRight-top {
+            margin-top: 10px;
+            padding: 40px 100px 15px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -o-border-radius: 4px;
+
+            .setting-cloud {}
+
+            .setting-cloud-text {
+                .title {
+                    margin: 29px 0 19px 0;
+                    font-family: InterUI;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #222222;
+                }
+
+                .desc {
+                    font-family: InterUI;
+                    font-size: 14px;
+                    color: #222222;
+                }
+                .link{
+                    a{
+                        font-family: InterUI;
+                        font-size: 14px;
+                        color: #1a0dab;
+                    }
+                }
+            }
+            .setting-cloud-btn{
+                a{
+                    font-family: InterUI;
+                    color: #222;
+                    margin: 10px 2px 7px;
+                    padding: 6px 19px  ;
+                    display: inline-block;
+                    border: 1px solid #ddd;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-size: .875rem;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fff;
+                        background-color: #6fae2e;
+                    }
+                }
+            }
+        }
+        .plant-settingRight-mid{
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            font-weight: 400;
+            font-size: 14px;
+            font-size: .875rem;
+            border-radius: 4px;
+            font-family: InterUI;
+        }
+        .plant-settingRight-bottom{
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            .setting-bottom-title{
+                font-family: InterUI;
+                font-size: 16px;
+                font-weight: 600;
+                color: #222222;
+              
+            }
+            .setting-bottom-btn{
+                a{
+                    font-family: InterUI;
+                    color: #222;
+                    margin: 10px 2px 7px;
+                    padding: 6px 19px  ;
+                    display: inline-block;
+                    border: 1px solid #ddd;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-size: .875rem;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fff;
+                        background-color: #6fae2e;
+                    }
+                }
+            }
+        }
+    }
+}

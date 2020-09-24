@@ -1,0 +1,117 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 600px) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint==tab-port {
+    @media (max-width: 900px) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint==tab-land {
+    @media (max-width: 1200px) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint==big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    } //1800px
+  }
+}
+
+@font-face {
+  font-family: 'InterUI';
+  src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: 'Semibold ';
+  src: url('../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf');
+}
+
+.plant-trees-settings {
+  margin-left: -110px;
+  .plant-settingLeft {
+    margin-top: 20px;
+    .plant-settingsLeft-top {
+      padding-bottom: 80px;
+      border-bottom: 1px solid #ddd;
+      .setting-title {
+        float: left;
+        color: #333;
+        font-weight: 700;
+        font-size: 25px;
+        font-size: 1.875rem;
+      }
+      .setting-tab {
+        float: right;
+        margin-top: 4px;
+        a {
+          color: #222;
+          text-decoration: none;
+          padding: 6px 20px;
+          position: relative;
+          display: inline-block;
+          font-weight: 400;
+          font-size: 14px;
+          font-size: 0.875rem;
+          background-color: #fafafa;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          border-left: 1px solid #ddd;
+          &:first-child {
+            border-left: 1px solid #ddd;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+          }
+          &.active {
+            color: #fff;
+            background-color: #666;
+            border-top: 1px solid #666;
+            border-bottom: 1px solid #666;
+          }
+          &:hover {
+            color: #fff;
+            background-color: #666;
+            border-top: 1px solid #666;
+            border-bottom: 1px solid #666;
+          }
+          &:after {
+            top: 0;
+            right: 0;
+            width: 1px;
+            content: '';
+            height: 100%;
+            position: absolute;
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+    .plant-settings-content{
+        .plant-setting-item{
+            .setting-title{
+                font-family: InterUI;
+                font-size: 16px;
+                color: #222222;
+            }
+        }
+    }
+  }
+}

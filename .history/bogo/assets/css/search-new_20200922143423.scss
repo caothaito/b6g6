@@ -1,0 +1,77 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 600px) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 900px) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
+            @content
+        }
+
+        ; //1800px
+    }
+}
+
+.plant-trees-searchNew{
+    margin-left: -110px;
+    margin-bottom: 20px;
+    .plant-trees-searhItem{
+        .item{
+            // display: -webkit-inline-box;
+            .thumb{
+                float: left;
+            }
+            .article{
+                float: left;
+                padding-left: 10px;
+                width: calc(100% - 100px);
+              a{
+                h3{
+                    font-family: Arial;
+                    font-size: 16px;
+                    color: #1a0dab;
+                }
+                .link{
+                    font-family: Arial;
+                    font-size: 13px;
+                    display: -webkit-inline-flex;
+                    color: #006621;
+                    h3{
+                        font-size: 13px;
+                        color: #666666;
+                      
+                        margin-left: 10px;
+                        padding-top: 2px;
+                    }
+                }
+              }
+              .desc{
+                font-size: 13px;
+                line-height: 1.54;
+                letter-spacing: normal;
+                color: #353535;
+              }
+            }
+        }
+    }
+}

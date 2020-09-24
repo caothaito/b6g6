@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ==============fontawesome=== -->
+    <script src="https://kit.fontawesome.com/c28984a6f5.js" crossorigin="anonymous"></script>
+    <!-- ================owl================== -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- =========================== -->
+    <script src="./assets/js/countUp.umd.js"></script>
+    <!-- ===================== -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- =========================== -->
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <link rel="stylesheet" href="./assets/css/search-new.css">
+</head>
+
+<body>
+
+    <div class="plant-trees-main float-left w-100">
+        <div class="plant-trees-home-search float-left w-100">
+            <div class="plant-trees-home-searchTop w-100 ">
+                <div class="plant-trees-home-searchLeft float-left w-100  ">
+                    <a href="./home.html" class="plant-trees-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <div class="plant-trees-search float-left w-100">
+                        <form method="get" action="">
+                            <input type="text" placeholder="Search the web to plant trees" class="search-form">
+                            <button class="type">search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="plant-trees-home-searchRight">
+
+                    <div class="plant-trees-number">
+                        <span class="counter-trees" id="counter">4</span>
+                        <div class="num-of-search">
+                            <div class="content">
+
+                                This is how many searches you have made on PlantTrees.
+                                Sync your devices to keep track of your impact. Let's increase the number!
+                                <a href="#">
+
+                                    Learn more
+                                </a>
+                            </div>
+                            <div class="share">
+                                <span class="text">Share PlantTrees</span>
+                                <span class="share-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plant-trees-home-account">
+                        <div class="plant-trees-home__info">
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/square.svg" alt="square.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Get Our App & Extension</a>
+                                    <div class="desc">Protect your data on every device.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/file.svg" alt="file.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Get Our App & Extension</a>
+                                    <div class="desc">Protect your data on every device.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/browser.svg" alt="browser.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Your Searches Are Encrypted</a>
+                                    <div class="desc">We protect your search behavior with encrypted connection</div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/secret-file.svg" alt="secret-file.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">No tracking. No profiling</a>
+                                    <div class="desc">We block hidden third-party trackers. We don't sell user's data
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="plant-trees-menu float-right">
+                        <a class="m-trigger mobile-toggle">
+                            <div class="hambuger">
+                                <div class="hambuger-box">
+                                    <div class="hambuger-inner">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plant-trees-searchPage float-left w-100">
+            <div class="plant-trees-searchOption float-left w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12 col-sm-12 float-left ">
+                            <div class="" id="mainMenu">
+                                <ul class=" plant-trees-menuOption  f1">
+                                    <li>
+                                        <a href="#home" class="all active active-first">All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="images">Images</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="news">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="video">Video</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="maps">Maps</a>
+                                    </li>
+                                    <li class="tool"><a href="#" class="tool">Tool</a>
+                                        <!-- <ul class="optionTool">
+                                            <li>
+                                                <a href="#">Wikipedia</a>
+                                                
+                                            </li>
+                                           </ul> -->
+                                    </li>
+                                    <li class="settings">
+                                        <a href="" class="settings">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plant-trees-content float-left w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="plant-trees-dropDown">
+                            <div class="plant-trees-swiches">
+                                <label class="switch-wrap float-left">
+                                    <input type="checkbox" />
+                                    <div class="switch"></div>
+                                </label>
+                                <div class="plant-trees-language" style="display: inline-block; margin-left: 5px;">
+                                    <div type="button" class=" dropdown-toggle" data-toggle="dropdown">
+                                        ViệtNam
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">日本 (Japan)</a>
+                                        <a class="dropdown-item" href="#"> 汉语 (Chinese)</a>
+                                        <a class="dropdown-item" href="#"> 安南 (An Nam)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plant-trees-safeSearch">
+                                <span>Safe Search: </span>
+                                <div class="plant-trees-Moderate" style="display: inline-block; margin-left: 10px">
+                                    <div type="button" class=" dropdown-toggle" data-toggle="dropdown">
+                                        Moderate
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">日本 (Japan)</a>
+                                        <a class="dropdown-item" href="#"> 汉语 (Chinese)</a>
+                                        <a class="dropdown-item" href="#"> 安南 (An Nam)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plant-trees-anyTime">
+                                <div class="plant-trees-Moderate" style="display: inline-block; margin-left: 10px">
+                                    <div type="button" class=" dropdown-toggle" data-toggle="dropdown">
+                                        Any Time
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">日本 (Japan)</a>
+                                        <a class="dropdown-item" href="#"> 汉语 (Chinese)</a>
+                                        <a class="dropdown-item" href="#"> 安南 (An Nam)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plant-trees-searchNew float-left w-100">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-9 col-md-9 col-sm-12 ">
+                    <div class="plant-trees-searhItem">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="./assets/images/search-new/s-n-1.jpg" alt="">
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <h3>BÓNG ĐÁ HÔM NAY 20/4: MU chơi lớn với Joao Felix. Real ...</h3>
+                                    <div class="link">
+                                        Báo Thể thao & Văn hóa Mobile
+                                        <h3>- 4 giờ trước</h3>
+                                    </div>
+                                </a>
+                                <div class="desc">
+                                    MU được cho là đã nói chuyện với Jorge Mendes để tìm hiểu khả năng chiêu mộ Joao Felix. Bong da, bóng đá hôm nay, MU, tin bong da MU, ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-search float-left w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <div class="footer-searchLeft">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="footer-magicBox">
+                                    <div class="magic-box-sroll">
+                                        <a href="#" class="item">
+                                            <span>No Tracking</span>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <span>No Profiling</span>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <span>Just Searching</span>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="footer-magicMenu text-center w-100">
+                                    <ul class="text-center w-100">
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="footer-searchright text-center">
+                        <ul class=" float-left  text-center w-100">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navClass: ['owl-prev', 'owl-next'],
+            navText: ["<img src='./assets/images/search/group-2.png'>",
+                "<img src='./assets/images/search/group-2.png'>"
+            ],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script src="./assets/js/main.js"></script>
+
+</html>

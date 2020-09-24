@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ==============fontawesome=== -->
+    <script src="https://kit.fontawesome.com/c28984a6f5.js" crossorigin="anonymous"></script>
+    <!-- ================owl================== -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- =========================== -->
+    <script src="./assets/js/countUp.umd.js"></script>
+    <!-- ===================== -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- =========================== -->
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <link rel="stylesheet" href="./assets/css/setting.css">
+</head>
+
+<body>
+
+    <div class="plant-trees-main float-left w-100">
+        <div class="plant-trees-home-search float-left w-100">
+            <div class="plant-trees-home-searchTop w-100 ">
+                <div class="plant-trees-home-searchLeft float-left w-100  ">
+                    <a href="./home.html" class="plant-trees-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <div class="plant-trees-search float-left w-100">
+                        <form method="get" action="">
+                            <input type="text" placeholder="Search the web to plant trees" class="search-form">
+                            <button class="type">search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="plant-trees-home-searchRight">
+
+                    <div class="plant-trees-number">
+                        <span class="counter-trees" id="counter">4</span>
+                        <div class="num-of-search">
+                            <div class="content">
+
+                                This is how many searches you have made on PlantTrees.
+                                Sync your devices to keep track of your impact. Let's increase the number!
+                                <a href="#">
+
+                                    Learn more
+                                </a>
+                            </div>
+                            <div class="share">
+                                <span class="text">Share PlantTrees</span>
+                                <span class="share-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plant-trees-home-account">
+                        <div class="plant-trees-home__info">
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/square.svg" alt="square.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Get Our App & Extension</a>
+                                    <div class="desc">Protect your data on every device.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/file.svg" alt="file.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Get Our App & Extension</a>
+                                    <div class="desc">Protect your data on every device.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/browser.svg" alt="browser.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">Your Searches Are Encrypted</a>
+                                    <div class="desc">We protect your search behavior with encrypted connection</div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="icon float-left">
+                                    <img src="./assets/images/secret-file.svg" alt="secret-file.svg">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="title">No tracking. No profiling</a>
+                                    <div class="desc">We block hidden third-party trackers. We don't sell user's data
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="plant-trees-menu float-right">
+                        <a class="m-trigger mobile-toggle">
+                            <div class="hambuger">
+                                <div class="hambuger-box">
+                                    <div class="hambuger-inner">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="plant-trees-searchPage float-left w-100">
+            <div class="plant-trees-searchOption float-left w-100">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="plant-trees-settings float-left w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="plant-settingLeft">
+                        <div class="plant-settingsLeft-top">
+                            <div class="setting-title">
+                                Settings
+                            </div>
+                            <div class="setting-tab">
+                                <a href="#" class="active">General</a>
+                                <a href="#">Theme</a>
+                                <a href="#">Apperance</a>
+                                <a href="#">Privacy</a>
+                            </div>
+
+                        </div>
+                        <!-- ===========1====== -->
+                        <div class="plant-settings-content float-left w-100">
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Region
+                                    </div>
+                                    <div class="setting-desc">
+                                        Changes results to be region specific
+                                    </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">All Region</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Language
+                                    </div>
+                                    <div class="setting-desc">
+                                        Changes the language across the entire site </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">Browser preferred language</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- =============2====== -->
+                        <div class="plant-settings-content float-left w-100">
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Safe Search
+                                    </div>
+                                    <div class="setting-desc">
+                                        Omits objectionable (mostly adult) material </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">Moderate</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Instant Answers
+                                    </div>
+                                    <div class="setting-desc">
+                                        Automatically open relevant Instant Answers </div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="switch" />
+                                    <label for="switch"></label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======3==== -->
+                        <div class="plant-settings-content float-left w-100">
+
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Infinite Scroll for Images and Videos
+                                    </div>
+                                    <div class="setting-desc">
+                                        Loads more image and video results when scrolling
+                                    </div>
+                                    <!-- switch -->
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Infinite" />
+                                    <label for="Infinite"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Infinite Scroll
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show suggestions under the search box as you type
+                                    </div>
+                                    <!-- switch -->
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Scroll" />
+                                    <label for="Scroll"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Auto-Suggest
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show suggestions under the search box as you type
+                                    </div>
+                                    <!-- switch -->
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Auto" />
+                                    <label for="Auto"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Open Links in a New Tab
+                                    </div>
+                                    <div class="setting-desc">
+                                        Opens results in new windows/tabs
+                                    </div>
+                                    <!-- switch -->
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Open" />
+                                    <label for="Open"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Advertisements
+                                    </div>
+                                    <div class="setting-desc">
+                                        If you still want to support us, <a href="">help spread PlantTrees</a> 
+                                    </div>
+                                    <!-- switch -->
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Advertisements" />
+                                    <label for="Advertisements"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Units of Measure
+                                    </div>
+                                    <div class="setting-desc">
+                                        Preferred units of measure
+                                     </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">No Preference (Default)</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Open Directions in...
+                                    </div>
+                                    <div class="setting-desc">
+                                        Which third party source to use for directions
+                                     </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">Apple Maps</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Map Rendering
+                                    </div>
+                                    <div class="setting-desc">
+                                        The rendering method to use for interactive maps
+                                     </div>
+                                </div>
+                                <div class="setting-value plant-setting-selected">
+                                    <select name="" id="">
+                                        <option value="">Best Available</option>
+                                        <option value="">Singapore</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======4====== -->
+                        <div class="plant-settings-content float-left w-100">
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Page Break #'s
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show page numbers at result page breaks </div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="Page" />
+                                    <label for="Page"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Page Break Lines
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show page numbers at result page breaks </div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="break-lines" />
+                                    <label for="break-lines"></label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========5====== -->
+                        <div class="plant-settings-content float-left w-100">
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Install PlantTrees
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show links to instructions for how to add PlantTrees to your browser </div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="PlantTrees" />
+                                    <label for="PlantTrees"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-desc">
+                                        Show occasional reminders to add DuckDuckGo to your browser</div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="break-lines" />
+                                    <label for="break-lines"></label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======6==== -->
+                        <div class="plant-settings-content float-left w-100">
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-title">
+                                        Install PlantTrees
+                                    </div>
+                                    <div class="setting-desc">
+                                        Show links to instructions for how to add PlantTrees to your browser </div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="PlantTrees" />
+                                    <label for="PlantTrees"></label>
+
+                                </div>
+                            </div>
+                            <div class="plant-setting-item">
+                                <div class="plant-setting-field">
+                                    <div class="setting-desc">
+                                        Show occasional reminders to add DuckDuckGo to your browser</div>
+                                    <!-- switch -->
+
+
+                                </div>
+                                <div class="setting-value">
+                                    <input type="checkbox" id="break-lines" />
+                                    <label for="break-lines"></label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plant-settings-save w-100">
+                            <a href="#" class="save  float-right mt-5 mb-5">
+                               <span> save & Exit</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 col-sm-12">
+                    <div class="plant-settingRight">
+                        <div class="plant-settingRight-top text-center">
+                            <div class="setting-cloud">
+                                <img src="assets/images/icons/cloud-save.svg" alt="cloud-save.svg">
+                            </div>
+                            <div class="setting-cloud-text">
+                                <div class="title">Cloud Save</div>
+                                <div class="desc">Save your settings anonymously to the cloud</div>
+                                <div class="link"><a href="#">What is this?</a></div>
+                            </div>
+                            <div class="setting-cloud-btn">
+                                <a href="#">Save Settings</a>
+                                <a href="#">Load Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-search float-left w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <div class="footer-searchLeft">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="footer-magicBox">
+                                    <div class="magic-box-sroll">
+                                        <a href="#" class="item">
+                                            <span>No Tracking</span>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <span>No Profiling</span>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <span>Just Searching</span>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="footer-magicMenu text-center w-100">
+                                    <ul class="text-center w-100">
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="footer-searchright text-center">
+                        <ul class=" float-left  text-center w-100">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script src="./assets/js/main.js"></script>
+
+</html>

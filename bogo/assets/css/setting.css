@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'InterUI';
+  src: url(../fonts/Inter-UI-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  font-family: 'Semibold ';
+  src: url("../fonts/Inter-SemiBold_5a940f143aafecbf00719f75eea1dd90.otf");
+}
+
+.plant-trees-settings {
+  margin-left: -110px;
+}
+
+@media (max-width: 1200px) {
+  .plant-trees-settings {
+    margin-left: 0;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft {
+  margin-top: 20px;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settingsLeft-top {
+    padding-bottom: 116px;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-title {
+  float: left;
+  color: #333;
+  font-weight: 700;
+  font-size: 25px;
+  font-size: 1.875rem;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab {
+  float: right;
+  margin-top: 4px;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a {
+  color: #222;
+  text-decoration: none;
+  padding: 6px 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a {
+    margin-top: 5px;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a:first-child {
+  border-left: 1px solid #ddd;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a.active {
+  color: #fff;
+  background-color: #666;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a:hover {
+  color: #fff;
+  background-color: #666;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settingsLeft-top .setting-tab a:after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  content: '';
+  height: 100%;
+  position: absolute;
+  background-color: #ddd;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content {
+  margin-top: 10px;
+  padding: 20px 0 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .plant-setting-field {
+  float: left;
+  width: 60%;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .plant-setting-field .setting-title {
+  font-family: InterUI;
+  font-size: 16px;
+  color: #222222;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .plant-setting-field .setting-desc {
+  font-family: InterUI;
+  font-size: 13px;
+  color: #555555;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value {
+  float: right;
+  width: 40%;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value select {
+  color: #222;
+  cursor: pointer;
+  border-color: #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  padding: 6px 40px 6px 10px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value select {
+    width: 100%;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 80px;
+  height: 30px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label {
+    width: 52px;
+    height: 21px;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 90px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label:after {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value input:checked + label {
+  background: #bada55;
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value input:checked + label:after {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label:active:after {
+  width: 128px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingLeft .plant-settings-content .plant-setting-item .setting-value label:active:after {
+    width: 30px;
+  }
+}
+
+.plant-trees-settings .plant-settingRight {
+  padding-left: 20px;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top {
+  margin-top: 10px;
+  padding: 40px 100px 15px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .plant-trees-settings .plant-settingRight .plant-settingRight-top {
+    padding: 20px 40px 10px;
+  }
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top .setting-cloud-text .title {
+  margin: 29px 0 19px 0;
+  font-family: InterUI;
+  font-size: 22px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top .setting-cloud-text .desc {
+  font-family: InterUI;
+  font-size: 14px;
+  color: #222222;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top .setting-cloud-text .link a {
+  font-family: InterUI;
+  font-size: 14px;
+  color: #1a0dab;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top .setting-cloud-btn a {
+  font-family: InterUI;
+  color: #222;
+  margin: 10px 2px 7px;
+  padding: 6px 19px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  background-color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-top .setting-cloud-btn a:hover {
+  color: #fff;
+  background-color: #6fae2e;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-mid {
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  border-radius: 4px;
+  font-family: InterUI;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-bottom {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-bottom .setting-bottom-title {
+  font-family: InterUI;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-bottom .setting-bottom-btn a {
+  font-family: InterUI;
+  color: #222;
+  margin: 10px 2px 7px;
+  padding: 6px 19px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  background-color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.plant-trees-settings .plant-settingRight .plant-settingRight-bottom .setting-bottom-btn a:hover {
+  color: #fff;
+  background-color: #6fae2e;
+}
+
+.plant-trees-settings .plant-settings-save a {
+  text-decoration: none;
+  background-color: #6fae2e;
+  font-weight: 400;
+  float: right;
+  font-size: .875rem;
+  padding: 6px 20px 6px 20px;
+  border-radius: 3px;
+}
+
+.plant-trees-settings .plant-settings-save a span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: InterUI;
+}
+/*# sourceMappingURL=setting.css.map */
