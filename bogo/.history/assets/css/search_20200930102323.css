@@ -51,6 +51,8 @@ img {
   src: url("../fonts/Montserrat-Medium.ttf");
 }
 
+
+
 .plant-trees-main .plant-trees-home-search {
   top: 0;
   left: 0;
@@ -408,12 +410,6 @@ img {
   margin-left: -150px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1397px) {
-  .plant-trees-searchPage .plant-trees-searchOption #mainMenu {
-    margin-left: 0;
-  }
-}
-
 @media (max-width: 1200px) {
   .plant-trees-searchPage .plant-trees-searchOption #mainMenu {
     margin-left: 0;
@@ -629,12 +625,6 @@ img {
   margin-left: -97px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1397px) {
-  .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
-    margin-left: 0;
-  }
-}
-
 @media (max-width: 1200px) {
   .plant-trees-searchPage .plant-trees-content .plant-trees-dropDown .plant-trees-swiches {
     margin-left: 50px;
@@ -711,13 +701,6 @@ img {
 .plant-trees-mainNew .plant-trees-mainLeft {
   margin-left: -109px;
   margin-right: 109px;
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1397px) {
-  .plant-trees-mainNew .plant-trees-mainLeft {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -820,12 +803,6 @@ img {
   margin-left: -106px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1397px) {
-  .plant-trees-mainNew .plant-trees-more {
-    margin-left: 0;
-  }
-}
-
 @media (max-width: 1200px) {
   .plant-trees-mainNew .plant-trees-more {
     margin-left: 0;
@@ -845,12 +822,6 @@ img {
 .plant-trees-mainNew .plant-trees-tableColumn {
   margin-left: -103px;
   margin-top: 50px;
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1397px) {
-  .plant-trees-mainNew .plant-trees-tableColumn {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 1200px) {

@@ -89,7 +89,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-
+    
 }
 
 
@@ -434,10 +434,7 @@ img {
 
         #mainMenu {
             margin-left: -150px;
-            @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-                margin-left: 0;
-            }
-            
+
             @include respond(tab-land) {
                 margin-left: 0;
             }
@@ -634,10 +631,7 @@ img {
 
             .plant-trees-swiches {
                 margin-left: -97px;
-                @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-                    margin-left: 0;
-                }
-                
+
                 @include respond(tab-land) {
                     margin-left: 50px;
                 }
@@ -713,11 +707,7 @@ img {
     .plant-trees-mainLeft {
         margin-left: -109px;
         margin-right: 109px;
-        @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-            margin-left: 0;
-            margin-right: 0;
-        }
-        
+
         @include respond(tab-land) {
             margin-left: 0;
             margin-right: 0;
@@ -821,10 +811,7 @@ img {
     .plant-trees-more {
         margin-top: 250px;
         margin-left: -106px;
-        @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-            margin-left: 0;
-          
-        }
+
         @include respond(tab-land) {
             margin-left: 0;
         }
@@ -843,10 +830,7 @@ img {
     .plant-trees-tableColumn {
         margin-left: -103px;
         margin-top: 50px;
-        @media screen and (min-width: 1200px) and (max-width: 1397px) { 
-            margin-left: 0;
-          
-        }
+
         @include respond(tab-land) {
             margin-left: 0;
         }
